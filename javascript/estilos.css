@@ -1,0 +1,284 @@
+/*Hoja de Estilo*/
+html {
+			background-color: #EDF7FF;
+			scrollbar-arrow-color: #E9F6FF;
+			scrollbar-base-color: #E9F6FF;
+			scrollbar-face-color:#4791C5;
+			scrollbar-track-color: #E9F6FF;
+			scrollbar-highlight-color: #E9F6FF;
+			scrollbar-3dlight-color: #E9F6FF;
+			scrollbar-shadow-color: #E9F6FF;
+			scrollbar-darkshadow-color: #E9F6FF;
+		}
+
+
+a.ord:link { 
+    color: #000000; 
+    text-decoration: none; 
+} 
+a.ord:visited { 
+    color: #000000; 
+    text-decoration: none; 
+} 
+a.ord:active { 
+    color: #000000; 
+    text-decoration: none; 
+} 
+a.ord:hover { 
+    color: #000000; 
+    text-decoration: underline; 
+}
+
+
+.Estilo0 {
+	color: #FFFFFF;
+	font-size: 13px;
+	font-weight: bold;	
+	font-family: Arial, Helvetica, sans-serif;
+}
+.Estilo1 {
+	color: #FFFFFF;
+	font-size: 15px;
+	font-weight: bold;	
+	font-family: Arial, Helvetica, sans-serif;
+}
+.Estilo2 {
+	color: #FFFFFF;
+	font-size: 11px;
+	font-weight: bold;	
+	font-family: Arial;
+}
+.Estilo3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #FFFFFF;
+}
+.Estilo4 {
+	color: #000000;
+	font-size: 13px;
+	font-weight: bold;	
+	font-family: Arial, Helvetica, sans-serif;
+}
+.Estilo5 {
+	color: #000000;
+	font-size: 10px;
+	font-weight: bold;		
+	font-family: Arial, Helvetica, sans-serif;
+}
+.Estilo6 {
+	color: #000000;
+	font-size: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.Estilo7 {
+	color: #1C3855;
+	font-size: 11px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.Estilo8 {
+	color: #1C3855;
+	font-size: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.Estilo9 {
+	color: #CCDDEE;
+	font-size: 10px;
+	font-weight: bold;	
+	font-family: Arial, Helvetica, sans-serif;
+}
+.Estilo10 {
+	color: #CCDDEE;
+	font-size: 9px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.Estilo11 {
+	color: #FFFFFF;
+	font-size: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.Estilo12 {
+	color: #336699;
+	font-size: 11px;
+	font-weight: bold;	
+	font-family: Arial;
+}
+.Estilo13 {
+	color: #2C5783;
+	font-size: 11px;
+	font-family: Arial;
+}
+.Estilo14 {
+	color: #2C5783;
+	font-size: 9px;
+	font-family: Arial;
+}
+.Estilo15 {
+	color: #2C5783;
+	font-size: 11px;
+	font-weight: bold;		
+	font-family: Arial;
+}
+.Estilo16 {
+	color: #2C5783;
+	font-size: 9px;
+	font-weight: bold;		
+	font-family: Arial;
+}
+.Estilo17 {
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.Estilo18 {
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;	
+	font-family: Arial;
+}
+.Estilo20 {color: #FFCCCC}
+.Estilo21 {color: #336699}
+.Estilo22 {color: #FFFFFF}
+.Estilo23 { 
+	color: #FFFFFF;
+	font-size: 11px;
+	font-weight: bold;
+}
+.Estilo24 {color: #FFFFFF; font-size: 12px; font-family: Arial; }
+.Estilo28 {color: #ffffff; font-size: 9px; }
+.Estilo30 {
+	font-size: 11px;
+	font-family: Arial;
+}
+.Estilo32 {
+	color: #FFFFFF;
+	font-size: 9px;
+	font-weight: bold;
+	font-family: Arial;
+}
+.Estilo34 {
+	color: #ffffff;
+	font-size: 10px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.Estilo35 {font-family: Arial, Helvetica, sans-serif}
+.Estilo37 {
+	color: #2C5783;
+	font-size: 12px;
+	font-weight: bold;		
+	font-family: Arial;
+}
+.Estilo38 {color: #336699; font-size: 12px; font-family: Verdana;  font-weight: bold; background: #CCDDEE;}
+.Estilo40 {font-family: Arial, Helvetica, sans-serif; font-size: 9px; color: #FFFFFF; }
+.Estilo50 {font-size: 11px}
+.Estilo51 {
+	font-size: 14px;
+	font-weight: bold;
+}
+.Estilo57 {color: #000000; font-family: Arial; font-size: 11px; font-weight: bold; }
+.Estilo59 {
+	font-size: 11px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.Estilo60 {font-size: 12px; color: #29537C; font-family: Arial;}
+.Estilo61 {font-size: 11px; color: #15293E; font-family: Arial;}
+.Estilo64 {font-size: 12px; color: #2C5783}
+.Estilo65 {font-size: 14px; color:#2C5783}
+.Estilo66 {font-size: 12px; color: #2C5783}
+.Estilo74 {color: #2C5783; font-size: 11px;}
+.Estilo77 {color: #274F76; font-size: 12px; font-family: Verdana;  font-weight: bold;}
+.Estilo78 {font-size: 11px; color: #25496D; font-family: Arial; }
+.Estilo79 {font-size: 12px;}
+.Estilo80 {font-size: 11px}
+.Estilo81 {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+.Estilo82 {font-size: 11px; color: #FFFFFF; font-family: Arial; }
+.Estilo83 {font-size: 11px; color: #FFFFFF; font-family: Arial; }
+.Estilo84 {font-size: 11px; color: #29527A; font-family: Arial; }
+.Estilo85 {color: #2C5783; font-size: 10px; font-family: Arial;}
+.Estilo86 {color: #0000FF;  font-size: 11px; }
+.Estilo87 {color: #274F76; font-size: 11px; font-family: Verdana; }
+.Estilo88 {
+	color: #FFFFFF;
+	font-size: 13px;
+	font-weight: bold;}
+.google-az {
+	color: #0743ED;
+	font-size: 12px;
+	font-weight: bold;	
+	font-family: Verdana;
+}
+.google-am {
+	color: #FBE104;
+	font-size: 12px;
+	font-weight: bold;	
+	font-family: Verdana;
+}
+.google-ve {
+	color: #039606;
+	font-size: 12px;
+	font-weight: bold;	
+	font-family: Verdana;
+}
+.google-ro {
+	color: #F41721;
+	font-size: 12px;
+	font-weight: bold;	
+	font-family: Verdana;
+}
+#calendarDiv {
+	BORDER-RIGHT: #317082 1px solid; PADDING-RIGHT: 1px; BORDER-TOP: #317082 1px solid; PADDING-LEFT: 1px; FONT-SIZE: 10px; VISIBILITY: hidden; PADDING-BOTTOM: 20px; BORDER-LEFT: #317082 1px solid; WIDTH: 205px; PADDING-TOP: 1px; BORDER-BOTTOM: #317082 1px solid; FONT-FAMILY: arial; POSITION: absolute; BACKGROUND-COLOR: #fff
+}
+#calendarDiv SPAN {
+	FLOAT: left
+}
+#calendarDiv IMG {
+	FLOAT: left
+}
+#calendarDiv .selectBox {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 2px; PADDING-BOTTOM: 1px; CURSOR: pointer; LINE-HEIGHT: 12px; PADDING-TOP: 1px
+}
+#calendarDiv .selectBoxOver {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 2px; PADDING-BOTTOM: 1px; CURSOR: pointer; LINE-HEIGHT: 12px; PADDING-TOP: 1px
+}
+#calendarDiv TD {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; FONT-SIZE: 10px; PADDING-BOTTOM: 3px; MARGIN: 0px; PADDING-TOP: 3px
+}
+#calendarDiv .selectBox {
+	BORDER-RIGHT: #e2ebed 1px solid; BORDER-TOP: #e2ebed 1px solid; BORDER-LEFT: #e2ebed 1px solid; COLOR: #e2ebed; BORDER-BOTTOM: #e2ebed 1px solid; POSITION: relative
+}
+#calendarDiv .selectBoxOver {
+	BORDER-RIGHT: #fff 1px solid; BORDER-TOP: #fff 1px solid; BORDER-LEFT: #fff 1px solid; COLOR: #fff; BORDER-BOTTOM: #fff 1px solid; POSITION: relative; BACKGROUND-COLOR: #317082
+}
+#calendarDiv .topBar {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; PADDING-TOP: 2px; HEIGHT: 16px; BACKGROUND-COLOR: #317082
+}
+#calendarDiv .activeDay {
+	COLOR: #ff0000
+}
+#calendarDiv .todaysDate {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; WIDTH: 201px; BOTTOM: 0px; LINE-HEIGHT: 17px; PADDING-TOP: 2px; POSITION: absolute; HEIGHT: 17px; BACKGROUND-COLOR: #e2ebed; TEXT-ALIGN: center
+}
+#calendarDiv .monthYearPicker {
+	BORDER-RIGHT: #aaaaaa 1px solid; BORDER-TOP: #aaaaaa 1px solid; DISPLAY: none; LEFT: 0px; BORDER-LEFT: #aaaaaa 1px solid; COLOR: #317082; BORDER-BOTTOM: #aaaaaa 1px solid; POSITION: absolute; TOP: 15px; BACKGROUND-COLOR: #e2ebed; zIndex: 1000
+}
+#calendarDiv #monthSelect {
+	WIDTH: 70px
+}
+#calendarDiv .monthYearPicker DIV {
+	CLEAR: both; PADDING-RIGHT: 1px; PADDING-LEFT: 1px; FLOAT: none; PADDING-BOTTOM: 1px; MARGIN: 1px; CURSOR: pointer; PADDING-TOP: 1px
+}
+#calendarDiv .monthYearActive {
+	COLOR: #e2ebed; BACKGROUND-COLOR: #317082
+}
+#calendarDiv TD {
+	CURSOR: pointer; TEXT-ALIGN: right
+}
+#calendarDiv .topBar IMG {
+	CURSOR: pointer
+}
+#calendarDiv .topBar DIV {
+	FLOAT: left; MARGIN-RIGHT: 1px
+}

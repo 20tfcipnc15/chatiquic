@@ -1,0 +1,55 @@
+.ItemStyle {
+	list-style-image: url(square4.gif);
+	font-family: "Verdana";
+	font-size: 12px;
+	vertical-align: middle;
+	background-repeat: no-repeat;
+	font-style: italic;
+
+
+
+
+
+
+}
+
+.PopItemStyle {
+	list-style-image: url(open.gif);
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 12px;
+	vertical-align: middle;
+	background-repeat: no-repeat;
+
+
+
+
+
+}
+
+body {
+	background-color: #F0F0FF;
+	color: #6666FF;
+
+
+
+}
+
+A:link {
+	color: #6666FF;
+	text-decoration: none;
+
+}
+
+A:visited {
+	color: #6666FF;
+	text-decoration: none;
+
+
+}
+
+A:hover {
+	color: #9900FF;
+	text-decoration: underline;
+
+
+	}

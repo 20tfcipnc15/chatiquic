@@ -1,0 +1,96 @@
+<?
+session_start();
+if (!isset($_SESSION['paso_por_donde_yo_quiero']))
+{ 
+	header ("Location: index.php"); 
+	exit; 
+} 
+$id_user=$_SESSION['id_user'];
+$nombre_ini=$_SESSION['nombre_ini']; 
+$unidad=$_SESSION['unidad_ini']; 
+$id_unidad = $_SESSION['id_unidad']; 
+$ip=$_SERVER['REMOTE_ADDR']; 
+include("../funciones1.php");
+include ("../php/fecha_hora.php");
+$fecha=fecha_hora(); 
+$link=conexion();
+
+//OBTENEMOS LA CADENA DE RUT A RECUPERAR
+$rut = $_POST['rut'];
+
+//Vaciams la cadena anterior en un vectr
+$vector = explode(",",$rut);
+$long = count ($vector);
+
+//Identificamos a los usuarios de la misma unidad
+//Obtenemos los id_user de usuarios, para considerar solo los despachos externos y no así los internos
+$sql = "SELECT nombre FROM user WHERE id_unidad = '$id_unidad'";
+$resp = mysql_query($sql);
+$filas = mysql_num_rows($resp);
+if($filas!=0)
+{ 	
+	$a=0;
+    while($linea1=mysql_fetch_array($resp))
+	{  	
+		$nombre = $linea1['nombre'];
+		$vec[$a]= $nombre;
+		$a++;
+	}
+}
+$cad='';
+for ($b=0; $b < $a; $b++)
+{	
+	$nom = $vec[$b];
+	$cad = $cad." or destino like '".$nom."'";
+}
+$cont = strlen($cad);
+$cad = substr($cad,4,$cont);
+
+//Buscamos si el RUT existe y actualizamos la Base de Datos
+for ($i=0; $i<=$long ; $i++)
+{
+	$rut = $vector[$i];
+	$sql = "SELECT * FROM correspondencia WHERE rut like '$rut' and (".$cad.") order by id_c DESC limit 1";
+	$res = mysql_query($sql) or die ("Error de búsqueda en la BD: ". mysql_Error());
+	$num = mysql_num_rows($res);
+	if ($num > 0)
+	{
+		while($linea=mysql_fetch_array($res))
+		{	
+			$rut = $linea["rut"];	
+			$destino = $linea["destino"];
+			$correlativo = $linea["correlativo"];
+			$hoja_ruta = $linea["hoja_ruta"];	
+			$tipo = $linea["tipo"];
+			$referencias = $linea["referencias"];	
+			$fojas = $linea["fojas"];
+			$estado = $linea["estado"];
+			$id_c1 = $linea["id_c"];
+			
+			if ($destino != $nombre_ini)	
+			{
+				//Insertamos el nuevo registro en la tabla correspondencia
+
+				$consulta ="UPDATE correspondencia SET sw = 0 WHERE id_c = '$id_c1'";
+				$resultado=mysql_query($consulta) or die ("Error de búsqueda en la BD: ". mysql_Error());
+				
+				$sql2="INSERT INTO correspondencia 	
+				(id_c,rut,unidad,fecha,correlativo,hoja_ruta,tipo,referencias,fojas,responsable,destino,comentario,ip,estado,sw) VALUES 	
+			(NULL,'$rut','$unidad','$fecha','$correlativo','$hoja_ruta','$tipo','$referencias','$fojas','$nombre_ini','$nombre_ini','Recuperado','$ip','$estado','1')";
+				$res2 = mysql_query($sql2,$link);
+			
+				$sql2 = "SELECT id_c FROM correspondencia order by id_c DESC limit 1";
+				$res2 = mysql_query($sql2,$link);
+				$linea2 = mysql_fetch_array($res2);
+				$id_c = $linea2["id_c"];
+				
+				///para el recibido haga el insert			
+				$sql = "INSERT INTO recibido(id_re,id_unidad,reg_int,id_c,recibido_por,ip,fecha) VALUES 
+				(NULL,'$id_unidad','$id_c','$id_c','$nombre_ini','$ip','$fecha')";
+				$result = mysql_query($sql,$link);
+			}
+		}
+	}
+}
+header ("location: recibido_mens.php");
+?>

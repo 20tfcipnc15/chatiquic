@@ -1,0 +1,1 @@
+foto1=imagen1.jpg&foto2=imagen2.jpg&foto3=imagen3.jpg&foto4=imagen4.jpg&foto5=imagen5.jpg&foto6=imagen6.jpg&total=6

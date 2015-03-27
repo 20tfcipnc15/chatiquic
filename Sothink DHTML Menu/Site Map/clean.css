@@ -1,0 +1,56 @@
+.ItemStyle {
+	font-size: 14px;
+	vertical-align: middle;
+	background-repeat: no-repeat;
+	list-style-type: circle;
+	font-family: "Century Gothic";
+
+
+
+
+
+
+
+
+}
+
+.PopItemStyle {
+	font-family: "Century Gothic";
+	font-size: 14px;
+	vertical-align: middle;
+	background-repeat: no-repeat;
+	list-style-type: disc;
+
+
+
+
+
+
+}
+
+body {
+	background-color: #FFFFFF;
+	color: #3366FF;
+
+
+
+
+
+}
+a {
+	color: #6699FF;
+}
+a:link {
+	color: #3366FF;
+	text-decoration: none;
+}
+a:visited {
+	color: #3366FF;
+	text-decoration: none;
+}
+a:hover {
+	font-style: normal;
+	color: #6699FF;
+	font-weight: bold;
+
+}

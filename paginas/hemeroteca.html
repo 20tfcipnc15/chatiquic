@@ -1,0 +1,496 @@
+<?php
+	include("funciones.php");
+	$link=conexion();
+	$consulta=mysql_query("select * from parametros", $link);
+	$c=0;
+	while($fila = mysql_fetch_array($consulta))
+	{  $Vec[$c]=$fila[1];	
+       $c=$c+1;
+	}
+?>
+<html>
+<head>
+
+<title>Hemeroteca</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<LINK href="../Templates/estilos.css" type=text/css rel=stylesheet>
+<style type="text/css"> 
+.Bloque
+{	display: block; 
+	position: center;  
+	top: 0; 
+	left: 0; 
+	font: 11 Arial; 
+	width:140; 
+	border: 1 solid black
+}
+.Cabecera
+{	color: #ffffff; 
+	background: #336699;
+	font: 12 Arial;
+	width:140; 
+	top: 10;
+	left: 10
+}
+.Contenido
+{	width:140;
+	font: 12 Courier New; 
+	color: #000099;
+	background: #EBF0FC; 
+	padding: 2 2 2 2;
+}
+.fecha
+{	width:140; 
+	font: 10 font-family; 
+	color: #3300CC;
+	background: #EBF0FC; 
+	padding: 2 2 2 2;
+}
+.enlace
+{	width:140; 
+	font: 10 font-family; 
+	color: blue;
+	background: #EBF0FC; 
+	padding: 2 2 2 2;
+}
+.Nuevo_bloque
+{	border: 1px solid black ; 
+	width: 149; //es el ancho del título Noticias
+	background: black; 
+	color: white; 	
+	font: 14 Arial; 
+	text-align: center
+}
+.Nuevo_contenido
+{	height: 130; 
+	background: white
+}
+.Contenido_principal
+{	border: none; 
+	position: absolute; 
+	left: 633px; 
+	top: 192px; 
+	width: 100; 
+	height: 100; 
+	clip: rect(0,144,125,0 ); // permite definir el tamaño de la ventana desplegable de noticias (arriba,derecha,abajo,izquierda)
+	background: transparent
+}
+a:link { text-decoration: none } 
+a:visited { text-decoration: none } 
+a:hover { text-decoration: underline } 
+}
+.Estilo17 {
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.Estilo20 {color: #FFCCCC}
+.Estilo21 {color: #336699}
+.Estilo22 {color: #FFFFFF}
+</style>
+<script language="JavaScript" type="text/JavaScript">
+// Generador de Noticias
+var ancho = 142 //anchura del cuadro
+var alto = 150 //altura del cuadro// permite tb definir la distancia entre una noticia y otra
+var marco = 0 //0 para que notenga marco (borde)
+//var pausilla = 8000 //tiempo de la pausa en milisegundos (2000 = 2 segundos)
+var destino = "_blank" //target en donde se quiera que se carguen los enlaces, en caso de usarlos.
+var cursor = "default;"  //cursor que se quiera sobre el cuadro
+var colTitular = '#EDF7FF' //color del texto del titularFONT-FAMILY: Arial, Helvetica, sans-serif
+var colTitular2 = '#EDF7FF' // ----> color del texto del primer titulo de noticias
+var colTexto = 'black' // color del texto de la noticia
+var colTexto2 = 'black'
+var colFecha = '#CCDDEE' //color del texto de la fecha
+var colFecha2 = '#333399'
+var colEnlace = '#FFFFFF' //color del texto del enlace
+var fuente = "Arial, Helvetica, sans-serif" //fuente para los textos 
+var tamTitular = '10' //tamaño de la fuente del titular
+var tamTexto = '10' //tamaño de la fuente del texto de la noticia
+var tamFecha = '10' // tamaño de la fuente de la fecha
+var tamEnlace = '10' // tamaño de la fuente del enlace 
+var masInfo = true //Determina si se usa o no el enlace. true para usarlo. false para omitirlo
+var poneFecha = true //true para poner fecha. false para omitirla. Si no se quiere fecha, dejar las comillas vacías ""
+
+function noticia(titular,texto,fecha,enlace,destino)
+	{
+	this.titular = titular
+	this.texto = texto
+	this.fecha= fecha
+	this.enlace = enlace
+	this.destino = destino
+	}
+var noticias = new Array()
+noticias[0]= new noticia("Presentación del Nuevo Sistema","La hemeroteca de la biblioteca central de la UMSA, presenta el sistema virtual.","13/04/2006","noticia.php?not=1","_blank")
+noticias[1]= new noticia("PERIODICOS EN HEMEROTECA","La hemeroteca esta suscrito a: La Razón, La Prensa, El Diario, El Mundo de Santa.","13/04/2006","noticia.php?not=2","_blank")
+noticias[2]= new noticia("REVISTAS EN HEMEROTECA","La hemeroteca esta suscrito a diferentes r.","13/04/2006","noticia.php?not=3","_blank")
+noticias[3]= new noticia("PERIODICOS ANTIGUOS","La hemeroteca esta trabajando en la digitalizacion de los periodicos .","13/04/2006","noticia.php?not=4","_blank")
+noticias[4]= new noticia("HISTORIA DE LA HEMEROTECA","Trabajamos en la investigacion de la historia.","13/04/2006","noticia.php?not=5","_blank")
+var det = false
+function escribe()
+{
+document.write ('<div id="mami" style="width:' + ancho + '; height:' + alto + 'px; position:relative;  overflow:hidden ">')
+document.write('<table width="' + ancho + '" height="100%"><tr><td valign="top">')
+document.write ('<div id="uno" class="Bloque" style="top:' + alto +'; width:' + ancho + ' height:' + alto + 'px;  ">')
+document.write ('<div class="Cabecera" align="left">')
+document.write (noticias[0].titular)
+document.write ('</div>')
+document.write ('<div class="Contenido" align="left">')
+document.write (noticias[0].texto)
+document.write ('</div>')
+document.write ('<div class="fecha" align="right">')
+document.write (noticias[0].fecha)
+document.write ('</div>')
+if(masInfo == true){
+	document.write ('<a class="enlace" href="')
+	document.write (noticias[0].enlace)
+	document.write ('" target="' + destino + '"><font color=blue>&raquo; Noticia completa...</font></a>')
+	}
+document.write ('</div>')
+document.write ('<div id="dos" class="Bloque" style="top:' + (alto*2) +'; width:' + ancho + ' height:' + alto + 'px; ">')
+document.write ('<div class="Cabecera" align="left">')
+document.write (noticias[1].titular)
+document.write ('</div>')
+document.write ('<div class="Contenido" align="justify">')
+document.write (noticias[1].texto)
+document.write ('</div>')
+document.write ('<div class="fecha" align="right">')
+document.write (noticias[1].fecha)
+document.write ('</div>')
+if(masInfo == true){
+	document.write ('<a class="enlace" href="')
+	document.write (noticias[1].enlace)
+	document.write ('" target = "' + destino + '"><font color=blue>&raquo; Noticia completa...</font></a>')
+	}
+document.write ('</div>')
+document.write('</td></tr></table>')
+document.write ('</div>')
+if(navigator.appName == "Netscape")
+{altoUno = document.getElementById('uno').offsetHeight}
+else
+{altoUno = document.getElementById('uno').clientHeight}
+document.getElementById('uno').onmouseover =function(){
+	det = true
+	clearTimeout(tiempo)
+	}
+document.getElementById('uno').onmouseout =function(){
+	det = false;
+	clearTimeout(tiempo)
+	escrolea()
+	}
+document.getElementById('dos').onmouseover =function(){
+	det = true
+	clearTimeout(tiempo)
+	}
+document.getElementById('dos').onmouseout =function(){
+	det = false;
+	clearTimeout(tiempo)
+	 escrolea()
+	}
+}
+desp = 1
+var cont = 1
+var pos,pos2
+function escrolea(){
+pos = document.getElementById('uno').style.top
+pos = pos.replace(/px/,"");
+pos = pos.replace(/pt/,"");
+pos = new Number(pos);
+pos2 = document.getElementById('dos').style.top
+pos2 = pos2.replace(/px/,"");
+pos2 = pos2.replace(/pt/,"");
+pos2 = new Number(pos2);
+pos -= desp
+pos2 -= desp
+if (pos == desp){
+	var contenidos = ""
+	document.getElementById('dos').style.top = alto
+	document.getElementById('dos').childNodes[0].firstChild.nodeValue  = noticias[cont].titular
+	document.getElementById('dos').childNodes[1].firstChild.nodeValue  = noticias[cont].texto
+	if(poneFecha == true){
+	document.getElementById('dos').childNodes[2].firstChild.nodeValue  = noticias[cont].fecha
+	}
+	if(masInfo == true){
+		document.getElementById('dos').childNodes[3].href = noticias[cont].enlace 
+	}
+	document.getElementById('uno').style.top = 0
+	if(cont == noticias.length-1)
+		{cont=0}
+	else{
+		cont++
+		}
+	pausa()
+	return false
+	}
+else{
+	if (pos2 == desp){
+		var contenidos = ""
+		document.getElementById('uno').style.top = alto
+		document.getElementById('uno').childNodes[0].firstChild.nodeValue  = noticias[cont].titular
+		document.getElementById('uno').childNodes[1].firstChild.nodeValue  = noticias[cont].texto
+		if(poneFecha == true){
+		document.getElementById('uno').childNodes[2].firstChild.nodeValue  = noticias[cont].fecha
+		}
+		if(masInfo == true){
+		document.getElementById('uno').childNodes[3].href  = noticias[cont].enlace
+		}
+		document.getElementById('dos').style.top = 0
+		if(cont == noticias.length-1)
+		{cont=0}
+	else{
+		cont++
+		}
+		pausa()
+		return false
+	}
+	else{
+		document.getElementById('uno').style.top = pos
+		document.getElementById('dos').style.top = pos2
+		}
+	}
+tiempo = window.setTimeout('escrolea()',3)
+}
+var tiempo
+function pausa()
+{
+clearTimeout(tiempo)
+if (det == false){
+	tiempo = setTimeout ('continuar()',2000)
+	}
+}
+function continuar()
+{
+if(det == false)
+	{escrolea()}
+}
+document.write('<style type="text/css">')
+document.write ('#uno {')
+document.write ('color: #006699;')
+if(cursor == "pointer" || cursor == "hand"){
+cursor = (navigator.appName == "Netscape")?'pointer;':'hand;';
+}
+document.write ('cursor:' + cursor + ";")
+document.write ('position:absolute;}')
+document.write ('#dos {')
+document.write ('color: #006699;')
+document.write ('cursor:' + cursor + ";")
+document.write ('position:absolute;}')
+document.write ('.titular{')
+document.write ('color:' + colTitular2 +';')
+document.write ('font-family:' + fuente + ';')
+document.write ('font-size :' + tamTitular + ';text-decoration:underline;}')
+document.write ('.texto{')
+document.write ('color:' + colTexto2 + ';')
+document.write ('font-family:' + fuente + ';')
+document.write ('font-size:' + tamTexto + ';}')
+if(poneFecha == true){
+document.write ('.fecha{')
+document.write ('color:' + colFecha2 +';')
+document.write ('font-family:' + fuente + ';')
+document.write ('font-size :' + tamFecha + ';font-weight:bold}')
+}
+else{
+document.write ('.fecha{display: none;}')
+}
+document.write ('.enlace{')
+document.write ('color:' + colEnlace + ';')
+document.write ('font-family:' + fuente + ';')
+document.write ('font-size:' + tamEnlace + ';}')
+document.write ('</style>')
+</script>
+<SCRIPT language=javascript src="../Templates/barra_de_estado_bc.js"></SCRIPT>
+<SCRIPT language=JavaScript src="../Templates/noticias_bc.js"></SCRIPT>
+<SCRIPT language=JavaScript src="../Templates/fecha-hora_bc.js"></SCRIPT>
+<SCRIPT language=JavaScript src="../Templates/contador.js"></SCRIPT>
+<script type="text/javascript" src="../Archivos de programa/SourceTec/Sothink DHTML Menu 8/Resource/js/stmenu.js"></script>
+</head>
+<body bottommargin="0" leftmargin="0" rightmargin="0" topmargin="0" bgcolor="#EDF7FF" onload=escrolea()>
+<table width="780" border="0" cellspacing="0">
+  <tr>
+    <td width="272" height="28" bordercolor="0" background="../Templates/img/fondo_banner_rojo1.gif"><div align="left"><img src="../Templates/img/umsa_banner1.GIF" width="272" height="28"></div></td>
+    <td width="508" height="28" bordercolor="0" background="../Templates/img/fondo_banner_rojo1.gif"><div align="right" class="Estilo13"><strong><font color="#ffffff">
+      <SCRIPT>today();</SCRIPT>
+    </font></strong></div></td>
+  </tr>
+  <tr>
+    <td height="4" colspan="2" background="../Templates/img/fondo_delgado.gif"><img src="../Templates/img/fondo_delgado.gif" width="2" height="4"></td>
+  </tr>
+  <tr>
+    <td height="133" colspan="2"><table width="780" height="131" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="132" height="110" background="../Templates/img/encabezado_01.gif">
+		<div align="center"><img src="../Templates/img/umsa_escudo1.gif" width="54" height="106"></div>		</td>
+        <td width="25"><img src="../Templates/img/encabezado_03.gif" width="25" height="110"></td>
+        <td width="445" background="../Templates/img/encabezado_04.gif"><div align="center"><img src="../Templates/img/14.gif" width="355" height="90"></div></td>
+        <td width="28"><img src="../Templates/img/encabezado_06.gif" width="28" height="110"></td>
+        <td width="150" background="../Templates/img/encabezado_01.gif"><div align="center"><img src="../Templates/img/images2.jpg" width="90" height="104">90</div></td>
+      </tr>
+      <tr>
+        <td width="132" height="21" background="../Templates/img/fondo_izq1.gif">&nbsp;</td>
+        <td  width="498" colspan="3"><table width="487" height="21" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td background="../Templates/img/fondo_cuerpo.gif" bgcolor="#8fb1d2"><table width="420" border="0" align="center" cellpadding="0" cellspacing="0" heigth="21">
+                <tr>
+                  <td width="191"><span class="Estilo10 Estilo20">&nbsp;<span class="Estilo21">Monoblok Central, Avenida Villazon N&deg; 1995</span></span></td>
+                  <td width="32"><div align="center"><img src="../Templates/img/correo.gif" width="21" height="21"></div></td>
+                  <td width="197"><span class="Estilo21"> <a href="mailto: hemeroteca@correo.umsa.bo" class="Estilo10">E<span class="Estilo21">-mail: bibcen@correo.umsa.bo</span></a></span></td>
+                </tr>
+              </table></td>
+            </tr>
+        </table></td>
+        <td width="150" background="../Templates/img/fondo_der1.gif">&nbsp;</td>
+      </tr>      
+	    </table>    </td>
+  </tr>
+  <tr>
+    <td height="248" colspan="2"><div class="Contenido_principal">
+      <table cellspacing=0 cellpadding=1 border=0 align="center">
+        <tr>
+          <td><div align="center">
+            <script>escribe()</script>
+          </div></td>
+        </tr>
+      </table>
+    </div>
+        <table width="780" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="132" height="246" bgcolor="#8fb1d2"><script src="../Templates/menu_bc.js"></script></td>
+             
+            <td width="498"><div align="center">
+              <table width="498" height="246" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td width="2">&nbsp;</td>
+                  <td width="494" bgcolor="#336699"><div align="center">
+                    <table width="490" height="246" border="2" align="center" cellpadding="0" cellspacing="0" bordercolor="#8fb1d2">
+                        <tr>
+                                           <td background="../Templates/img/fondo_cuerpo.gif"><center>
+                                             <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="400" height="170" align="middle">
+                                             <param name="movie" value="../Templates/22 Imagenes Final.swf">
+                                             <param name="quality" value="high">
+                                             <embed src="../Templates/22 Imagenes Final.swf" width="400" height="170" align="middle" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash"></embed>
+                          </object></center></td>
+                        </tr>
+                      </table>
+                                       </div></td>
+                  <td width="2">&nbsp;</td>
+                </tr>
+              </table>
+            </div></td>
+            <td width="150" height="200"><table width="150" border="0" align="right" cellpadding="0" cellspacing="0">
+              <tr>
+                <td width="150"><table width="150" border="2" align="right" cellpadding=0 cellspacing=0 bordercolor="#8fb1d2" class="Nuevo_bloque">
+                    <tr>
+                      <td width="150" bgcolor="#336699"><b> Noticias </b></td>
+                    </tr>
+                    <tr>
+                      <td class="Nuevo_contenido"></td>
+                    </tr>
+                </table></td>
+              </tr>
+              
+              <tr>
+                <td><table width="150" height="96" border="2" cellpadding="0" cellspacing="0" bordercolor="#8fb1d2">
+                  <tr>
+                    <td background="../Templates/img/fondo_cuerpo.gif" bgcolor="#336699"><div align="center"><img src="../Templates/img/razon1 copy.gif" width="90" height="26" border="0" usemap="#Map2"></div></td>
+                  </tr>
+                  <tr>
+                    <td background="../Templates/img/fondo_cuerpo.gif" bgcolor="#336699"><div align="center"><img src="../Templates/img/diario1.gif" width="90" height="22" border="0" usemap="#Map3"></div></td>
+                  </tr>
+                  <tr>
+                    <td background="../Templates/img/fondo_cuerpo.gif" bgcolor="#336699"><p align="center"><img src="../Templates/img/prensa1.gif" width="91" height="24" border="0" usemap="#Map4"></p>                      </td>
+                  </tr>
+                </table></td>
+              </tr>
+              
+            </table>            </td>
+          </tr>
+    </table></td>
+  </tr>
+  
+  <tr>
+    <td colspan="2">
+      <table width="780" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td><table width="780" height="21" border="0" align="center" cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="132" height="21" background="../Templates/img/fondo_izq1.gif"><div align="center"><strong><span class="Estilo22">Visitantes</span></strong></div></td>
+              <td width="498"><div align="center">
+                <table width="490" height="20" border="0" align="center" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td width="25"><img src="../Documents and Settings/Alecita/Escritorio/images/Untitled-3_01.gif" width="25" height="21"></td>
+                    <td width="41" background="../Documents and Settings/Alecita/Escritorio/images/Untitled-3_02.gif"><div align="center"></div></td>
+                    <td width="356" background="../Documents and Settings/Alecita/Escritorio/images/Untitled-3_03 copy.gif"><div align="center" class="Estilo17">&Uacute;ltimas Adquicisiones</div></td>
+                    <td width="43" background="../Documents and Settings/Alecita/Escritorio/images/Untitled-3_04.gif">&nbsp;</td>
+                    <td width="25"><img src="../Documents and Settings/Alecita/Escritorio/images/Untitled-3_05.gif" width="22" height="21"></td>
+                    </tr>
+                </table>
+              </div></td>
+              <td width="150" background="../Templates/img/fondo_der3.gif"><div align="center" class="Estilo17">Novedades</div></td>
+            </tr>
+          </table></td>
+        </tr>
+        <tr>
+		<tr> <td height="1"></td>		</tr>
+          <td><table width="780" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="132" height="90" bgcolor="#8fb1d2"><table width="132" height="108" border="2" align="center" cellpadding="0" cellspacing="0" bordercolor="#8fb1d2" bgcolor="#336699">
+                <tr>
+                  <td height="68"><SCRIPT>
+document.write("<div class='Estilo13'><font color='#ffffff'><center><strong>Usted ha visitado nuestra Página <b><br>" + amt() + "</b> veces.<br> Gracias...!</strong></center></font></div>")
+</SCRIPT>			</td>
+                </tr>
+                <tr>
+                  <td background="../Templates/img/fondo_cuerpo.gif" bgcolor="#8fb1d2"><div align="center"><img src="../Templates/img/google copy.gif" alt="B&uacute;squeda en Google" width="80" height="26" border="0" usemap="#Map"></div></td>
+                </tr>
+                
+              </table></td>
+              <td width="4">&nbsp;</td>
+              <td width="490" bgcolor="#8fb1d2"><div align="center"><marquee width="484" height="110">
+                
+                  <table width="486" border="2" align="center" cellpadding="0" cellspacing="0" bordercolor="#336699">
+                    <tr>
+                      <td><img src="../Templates/img/novedades/3.jpg" width="89" height="106"></td>
+                      <td><img src="../Templates/img/novedades/4.jpg" width="125" height="106"></td>
+                      <td><img src="../Templates/img/novedades/5.jpg" width="110" height="106"></td>
+                      <td><img src="../Templates/img/novedades/2.jpg" width="112" height="106"></td>
+                      <td><img src="../Templates/img/novedades/1.jpg" width="105" height="106"></td>
+                      <td><img src="../Templates/img/novedades/6.jpg" width="85" height="106"></td>
+                    </tr>
+                  </table>
+              </marquee></div>              </td>
+              <td width="4">&nbsp;</td>
+              <td width="150" bgcolor="#8fb1d2"><table width="150" height="111" border="2" align="center" cellpadding="0" cellspacing="0" bordercolor="#8fb1d2" bgcolor="#336699">
+                <tr>
+                  <td>                  <div align="center"><img src="../Templates/img/novedades.GIF" width="105" height="112"></div></td>
+                </tr>
+                
+              </table></td>
+            </tr>
+          </table></td>
+        </tr>
+      </table>    </td>
+  </tr>
+  <tr>
+    <td height="22" colspan="2"><table width="780" height="20" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="15" height="20"><img src="../Templates/img/No_fondo1.gif" width="15" height="20"></td>
+        <td width="750" background="../Templates/img/No_fondo2.gif">&nbsp;</td>
+        <td width="15"><img src="../Templates/img/No_fondo3.gif" width="15" height="20"></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+
+<map name="Map">
+  <area shape="rect" coords="0,1,85,31" href="#http://www.google.com" alt="B&uacute;squeda en Google">
+</map>
+<map name="Map2">
+  <area shape="rect" coords="0,-1,94,26" href="#http://www.la-razon.com" target="http://www.la-razon.com" alt="Peri&oacute;dico La Raz&oacute;n">
+</map>
+<map name="Map3">
+<area shape="rect" coords="-2,2,88,21" href="#http://www.eldiario.net" target="http://www.eldiario.net" alt="Peri&oacute;dico El diario">
+</map>
+<map name="Map4">
+  <area shape="rect" coords="0,1,90,24" href="#http://www.laprensa.com.bo" target="http://www.laprensa.com.bo" alt="Peri&oacute;dico La Prensa">
+</map>
+</body>
+</html>

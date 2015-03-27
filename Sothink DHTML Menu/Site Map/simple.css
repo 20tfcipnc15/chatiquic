@@ -1,0 +1,51 @@
+body {
+	background-color: #FFFFFF;
+	color: #000000;
+	font-family: "sans-serif";
+	font-size: 14px;
+
+
+
+
+}
+a {
+	color: #666666;
+
+}
+ul {
+	list-style-type: circle;
+	font-size: 16px;
+	font-weight: bold;
+	font-style: italic;
+	color: #666666;
+
+
+
+
+}
+ul ul {
+	list-style-type: square;
+	font-size: 16px;
+	font-weight: normal;
+	font-style: italic;
+	color: #000000;
+	text-decoration: underline;
+
+
+
+
+}
+ul ul ul {
+	list-style-type: disc;
+	font-size: 14px;
+	font-style: normal;
+	text-decoration: none;
+
+
+
+}
+ul ul ul ul {
+	list-style-type: disc;
+	font-size: 12px;
+
+}

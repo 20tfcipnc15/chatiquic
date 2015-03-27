@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sothink_menu>
+  <description>
+    <temp_depict>Clone the menu on www.nike.com. The original menu is made by Flash.</temp_depict>
+    <temp_title>Nike Menu</temp_title>
+    <version>7.00</version>
+    <prog_id>PageletServer.DynamicMenu</prog_id>
+    <update_time>37441.581585648</update_time>
+    <preview_path></preview_path>
+  </description>
+  <global>
+    <top_state>2</top_state>
+    <publish_file></publish_file>
+    <js_path_name></js_path_name>
+    <fast_js_enable>0</fast_js_enable>
+    <fast_js_type>0</fast_js_type>
+    <fast_js_path></fast_js_path>
+    <fast_js_img_path></fast_js_img_path>
+    <fast_js_script_path></fast_js_script_path>
+    <click_show>0</click_show>
+    <right_to_left>0</right_to_left>
+    <hide_sub>1</hide_sub>
+    <delay_hide>1000</delay_hide>
+    <delay_show_v>0</delay_show_v>
+    <delay_show_h>0</delay_show_h>
+    <name>menu0129</name>
+    <type>0</type>
+    <align>0</align>
+    <stretch_width>0</stretch_width>
+    <width>100</width>
+    <width_unit>0</width_unit>
+    <coor_x>0</coor_x>
+    <coor_x_scroll>1</coor_x_scroll>
+    <coor_y>40</coor_y>
+    <coor_y_scroll>1</coor_y_scroll>
+    <cursor_nolink></cursor_nolink>
+    <cursor_link></cursor_link>
+    <script_path></script_path>
+    <image_path></image_path>
+    <link_prefix></link_prefix>
+    <highlight>67108896</highlight>
+    <highlight_level>1</highlight_level>
+    <encode>1</encode>
+    <hide_select>1</hide_select>
+    <hide_object>0</hide_object>
+    <hide_iframe>0</hide_iframe>
+  </global>
+  <ul>
+    <li type="image" class="item"><a href="" target="_self"></a></li>
+    <li type="text" class="pop_item"><a href="#" target="_self">&amp;nbsp; 1_NIKE SITES_&amp;nbsp; 2</a></li>
+    <ul>
+      <li type="separator"></li>
+      <li type="text" class="item"><a href="#" target="_self">Nike.com</a></li>
+      <li type="separator"></li>
+      <li type="separator"></li>
+      <li type="separator"></li>
+      <li type="text" class="item"><a href="#" target="_self">Action Sports</a></li>
+      <li type="text" class="item"><a href="#" target="_self">Basketball</a></li>
+      <li type="text" class="item"><a href="#" target="_self">Conditioned to Conquer</a></li>
+      <li type="text" class="item"><a href="#" target="_self">Cycling</a></li>
+      <li type="text" class="item"><a href="#" target="_self">Eyewear</a></li>
+      <li type="text" class="item"><a href="#" target="_self">Football</a></li>
+      <li type="text" class="item"><a href="#" target="_self">Golf</a></li>
+      <li type="text" class="item"><a href="#" target="_self">Hockey</a></li>
+      <li type="text" class="item"><a href="#" target="_self">Jordan</a></li>
+      <li type="text" class="item"><a href="#" target="_self">Lance10//2</a></li>
+      <li type="text" class="item"><a href="#" target="_self">NikeStore</a></li>
+      <li type="separator"></li>
+    </ul>
+    <li type="text" class="item"><a href="" target="_self"></a></li>
+    <li type="text" class="pop_item"><a href="#" target="_self">SHOP_&amp;nbsp; 2</a></li>
+    <ul>
+      <li type="separator"></li>
+      <li type="text" class="item"><a href="#" target="_self">NikeStore</a></li>
+      <li type="separator"></li>
+      <li type="separator"></li>
+      <li type="separator"></li>
+      <li type="text" class="item"><a href="#" target="_self">Women</a></li>
+      <li type="text" class="item"><a href="#" target="_self">Men</a></li>
+      <li type="text" class="item"><a href="#" target="_self">Girls</a></li>
+      <li type="text" class="item"><a href="#" target="_self">Boys</a></li>
+      <li type="text" class="item"><a href="#" target="_self">Customize with NIKE ID</a></li>
+      <li type="separator"></li>
+    
+    </ul>
+    <li type="text" class="item"><a href="" target="_self"></a></li>
+    <li type="text" class="item"><a href="" target="_self"></a></li>
+    <li type="text" class="item"><a href="#" target="_self">&amp;nbsp; 1_SEARCH</a></li>
+  </ul>
+  <layer>
+    <setting>
+      <display>0</display>
+      <spacing>6</spacing>
+      <padding>0</padding>
+      <transparency>0</transparency>
+      <direction>0</direction>
+      <corner_x>0</corner_x>
+      <corner_y>0</corner_y>
+      <bg_color>#000000</bg_color>
+      <bg_transparent>0</bg_transparent>
+      <bg_image></bg_image>
+      <bg_tile>3</bg_tile>
+      <border_style>1</border_style>
+      <border_width>1</border_width>
+      <border_color>#000000</border_color>
+      <border_synchronize>0</border_synchronize>
+      <shadow_type>0</shadow_type>
+      <shadow_size>4</shadow_size>
+      <shadow_color>#7F7F7F</shadow_color>
+      <effect_show>0</effect_show>
+      <effect_hide>0</effect_hide>
+      <effect_speed>90</effect_speed>
+      <enable_decoration>0</enable_decoration>
+      <dr_left_top></dr_left_top>
+      <dr_right_top></dr_right_top>
+      <dr_right_bottom></dr_right_bottom>
+      <dr_left_bottom></dr_left_bottom>
+      <dr_top img_path="" img_height="-1" img_width="-1" bg_img="" bg_color="#FFFFF7" bg_transparent="0" bg_tile="3"></dr_top>
+      <dr_right img_path="" img_height="-1" img_width="-1" bg_img="" bg_color="#FFFFF7" bg_transparent="0" bg_tile="3"></dr_right>
+      <dr_bottom img_path="" img_height="-1" img_width="-1" bg_img="" bg_color="#FFFFF7" bg_transparent="0" bg_tile="3"></dr_bottom>
+      <dr_left img_path="" img_height="-1" img_width="-1" bg_img="" bg_color="#FFFFF7" bg_transparent="0" bg_tile="3"></dr_left>
+    </setting>
+    <node state="0" condition_invisible="0">
+      <condition_prefix></condition_prefix>
+      <condition_suffix></condition_suffix>
+      <general width="0" height="0" type="2" align_h="0" align_v="1" tip_text="" status="" status_default="1"></general>
+      <font out_face="Arial" out_color="#000000" out_size="9" out_size_unit="0" out_decoration="1" over_face="Arial" over_color="#000000" over_size="9" over_size_unit="0" over_decoration="1"></font>
+      <image out="E:\cmx-work\products\DHTMLMenu\dhtmlmenu2007\templates\assort\clone\nike menu\nike.gif" over="E:\cmx-work\products\DHTMLMenu\dhtmlmenu2007\templates\assort\clone\nike menu\nike.gif" width="41" height="19" border="0"></image>
+      <icon out="" over="" width="0" height="0" border="0"></icon>
+      <arrow out="" over="" width="7" height="7" border="0"></arrow>
+      <background out_color="#CCCCCC" out_transparent="1" out_image="" out_tile="3" over_color="#FFCC00" over_transparent="1" over_image="" over_tile="3"></background>
+      <border style="0" width="0" out_color="#FFFFFF" out_synchronize="0" over_color="#FFFFFF" over_synchronize="0"></border>
+    </node>
+    <node state="2" condition_invisible="0">
+      <condition_prefix></condition_prefix>
+      <condition_suffix></condition_suffix>
+      <general width="0" height="0" type="0" align_h="1" align_v="1" tip_text="" status="" status_default="1"></general>
+      <font out_face="Arial" out_color="#FFFFFF" out_size="8" out_size_unit="0" out_decoration="0" over_face="Arial" over_color="#FFFFFF" over_size="8" over_size_unit="0" over_decoration="0"></font>
+      <image out="" over="" width="0" height="0" border="0"></image>
+      <icon out="" over="" width="0" height="0" border="0"></icon>
+      <arrow out="D:\Program Files\SourceTec\Sothink DHTMLMenu\images\Arrow\yellow4-d.gif" over="D:\Program Files\SourceTec\Sothink DHTMLMenu\images\Arrow\yellow4-d.gif" width="7" height="7" border="0"></arrow>
+      <background out_color="#000000" out_transparent="0" out_image="" out_tile="3" over_color="#000000" over_transparent="1" over_image="" over_tile="3"></background>
+      <border style="0" width="0" out_color="#FFFFFF" out_synchronize="0" over_color="#FFFFFF" over_synchronize="0"></border>
+    
+      <layer>
+        <setting>
+          <display>1</display>
+          <spacing>0</spacing>
+          <padding>3</padding>
+          <transparency>0</transparency>
+          <direction>0</direction>
+          <corner_x>0</corner_x>
+          <corner_y>2</corner_y>
+          <bg_color>#FFFFFF</bg_color>
+          <bg_transparent>0</bg_transparent>
+          <bg_image></bg_image>
+          <bg_tile>3</bg_tile>
+          <border_style>1</border_style>
+          <border_width>1</border_width>
+          <border_color>#999999</border_color>
+          <border_synchronize>1</border_synchronize>
+          <shadow_type>0</shadow_type>
+          <shadow_size>4</shadow_size>
+          <shadow_color>#7F7F7F</shadow_color>
+          <effect_show>1</effect_show>
+          <effect_hide>1</effect_hide>
+          <effect_speed>62</effect_speed>
+          <enable_decoration>0</enable_decoration>
+          <dr_left_top></dr_left_top>
+          <dr_right_top></dr_right_top>
+          <dr_right_bottom></dr_right_bottom>
+          <dr_left_bottom></dr_left_bottom>
+          <dr_top img_path="" img_height="-1" img_width="-1" bg_img="" bg_color="#FFFFF7" bg_transparent="0" bg_tile="3"></dr_top>
+          <dr_right img_path="" img_height="-1" img_width="-1" bg_img="" bg_color="#FFFFF7" bg_transparent="0" bg_tile="3"></dr_right>
+          <dr_bottom img_path="" img_height="-1" img_width="-1" bg_img="" bg_color="#FFFFF7" bg_transparent="0" bg_tile="3"></dr_bottom>
+          <dr_left img_path="" img_height="-1" img_width="-1" bg_img="" bg_color="#FFFFF7" bg_transparent="0" bg_tile="3"></dr_left>
+        </setting>
+        <node state="0" condition_invisible="0">
+          <condition_prefix></condition_prefix>
+          <condition_suffix></condition_suffix>
+          <separator size="1" bg_color="#FFFFFF" bg_transparent="0" line_img="" line_img_width="200" line_img_height="3"></separator>
+        </node>
+        <node state="0" condition_invisible="0">
+          <condition_prefix></condition_prefix>
+          <condition_suffix></condition_suffix>
+          <general width="0" height="0" type="0" align_h="0" align_v="1" tip_text="" status="" status_default="1"></general>
+          <font out_face="Arial" out_color="#000000" out_size="8" out_size_unit="0" out_decoration="1" over_face="Arial" over_color="#FFFFFF" over_size="8" over_size_unit="0" over_decoration="1"></font>
+          <image out="" over="" width="-1" height="-1" border="0"></image>
+          <icon out="" over="" width="1" height="0" border="0"></icon>
+          <arrow out="" over="" width="-1" height="-1" border="0"></arrow>
+          <background out_color="#000000" out_transparent="1" out_image="" out_tile="3" over_color="#DBDBDB" over_transparent="1" over_image="E:\cmx-work\products\DHTMLMenu\dhtmlmenu2007\templates\assort\clone\nike menu\3a.gif" over_tile="0"></background>
+          <border style="0" width="0" out_color="#FFFFFF" out_synchronize="0" over_color="#FFFFFF" over_synchronize="0"></border>
+        </node>
+        <node state="0" condition_invisible="0">
+          <condition_prefix></condition_prefix>
+          <condition_suffix></condition_suffix>
+          <separator size="1" bg_color="#FFFFFF" bg_transparent="0" line_img="" line_img_width="200" line_img_height="3"></separator>
+        </node>
+        <node state="0" condition_invisible="0">
+          <condition_prefix></condition_prefix>
+          <condition_suffix></condition_suffix>
+          <separator size="1" bg_color="#000000" bg_transparent="0" line_img="" line_img_width="200" line_img_height="-1"></separator>
+        </node>
+        <node state="0" condition_invisible="0">
+          <condition_prefix></condition_prefix>
+          <condition_suffix></condition_suffix>
+          <separator size="1" bg_color="#FFFFFF" bg_transparent="0" line_img="" line_img_width="200" line_img_height="3"></separator>
+        </node>
+        <node state="0" condition_invisible="0">
+          <condition_prefix></condition_prefix>
+          <condition_suffix></condition_suffix>
+          <general width="0" height="0" type="0" align_h="0" align_v="1" tip_text="" status="" status_default="1"></general>
+          <font out_face="Arial" out_color="#000000" out_size="8" out_size_unit="0" out_decoration="0" over_face="Arial" over_color="#FFFFFF" over_size="8" over_size_unit="0" over_decoration="0"></font>
+          <image out="" over="" width="-1" height="-1" border="0"></image>
+          <icon out="" over="" width="0" height="0" border="0"></icon>
+          <arrow out="" over="" width="-1" height="-1" border="0"></arrow>
+          <background out_color="#000000" out_transparent="1" out_image="" out_tile="3" over_color="#DBDBDB" over_transparent="1" over_image="E:\cmx-work\products\DHTMLMenu\dhtmlmenu2007\templates\assort\clone\nike menu\4.gif" over_tile="0"></background>
+          <border style="0" width="0" out_color="#FFFFFF" out_synchronize="0" over_color="#FFFFFF" over_synchronize="0"></border>
+        </node>
+        <node state="0" condition_invisible="0">
+          <condition_prefix></condition_prefix>
+          <condition_suffix></condition_suffix>
+          <general width="0" height="0" type="0" align_h="0" align_v="1" tip_text="" status="" status_default="1"></general>
+          <font out_face="Arial" out_color="#000000" out_size="8" out_size_unit="0" out_decoration="0" over_face="Arial" over_color="#FFFFFF" over_size="8" over_size_unit="0" over_decoration="0"></font>
+          <image out="" over="" width="-1" height="-1" border="0"></image>
+          <icon out="" over="" width="0" height="0" border="0"></icon>
+          <arrow out="" over="" width="-1" height="-1" border="0"></arrow>
+          <background out_color="#000000" out_transparent="1" out_image="" out_tile="3" over_color="#DBDBDB" over_transparent="1" over_image="E:\cmx-work\products\DHTMLMenu\dhtmlmenu2007\templates\assort\clone\nike menu\3.gif" over_tile="0"></background>
+          <border style="0" width="0" out_color="#FFFFFF" out_synchronize="0" over_color="#FFFFFF" over_synchronize="0"></border>
+        </node>
+        <node state="0" condition_invisible="0">
+          <condition_prefix></condition_prefix>
+          <condition_suffix></condition_suffix>
+          <general width="0" height="0" type="0" align_h="0" align_v="1" tip_text="" status="" status_default="1"></general>
+          <font out_face="Arial" out_color="#000000" out_size="8" out_size_unit="0" out_decoration="0" over_face="Arial" over_color="#FFFFFF" over_size="8" over_size_unit="0" over_decoration="0"></font>
+          <image out="" over="" width="-1" height="-1" border="0"></image>
+          <icon out="" over="" width="0" height="0" border="0"></icon>
+          <arrow out="" over="" width="-1" height="-1" border="0"></arrow>
+          <background out_color="#000000" out_transparent="1" out_image="" out_tile="3" over_color="#DBDBDB" over_transparent="1" over_image="E:\cmx-work\products\DHTMLMenu\dhtmlmenu2007\templates\assort\clone\nike menu\5.gif" over_tile="0"></background>
+          <border style="0" width="0" out_color="#FFFFFF" out_synchronize="0" over_color="#FFFFFF" over_synchronize="0"></border>
+        </node>
+        <node state="0" condition_invisible="0">
+          <condition_prefix></condition_prefix>
+          <condition_suffix></condition_suffix>
+          <general width="0" height="0" type="0" align_h="0" align_v="1" tip_text="" status="" status_default="1"></general>
+          <font out_face="Arial" out_color="#000000" out_size="8" out_size_unit="0" out_decoration="0" over_face="Arial" over_color="#FFFFFF" over_size="8" over_size_unit="0" over_decoration="0"></font>
+          <image out="" over="" width="-1" height="-1" border="0"></image>
+          <icon out="" over="" width="0" height="0" border="0"></icon>
+          <arrow out="" over="" width="-1" height="-1" border="0"></arrow>
+          <background out_color="#000000" out_transparent="1" out_image="" out_tile="3" over_color="#DBDBDB" over_transparent="1" over_image="E:\cmx-work\products\DHTMLMenu\dhtmlmenu2007\templates\assort\clone\nike menu\2.gif" over_tile="0"></background>
+          <border style="0" width="0" out_color="#FFFFFF" out_synchronize="0" over_color="#FFFFFF" over_synchronize="0"></border>
+        </node>
+        <node state="0" condition_invisible="0">
+          <condition_prefix></condition_prefix>
+          <condition_suffix></condition_suffix>
+          <general width="0" height="0" type="0" align_h="0" align_v="1" tip_text="" status="" status_default="1"></general>
+          <font out_face="Arial" out_color="#000000" out_size="8" out_size_unit="0" out_decoration="0" over_face="Arial" over_color="#FFFFFF" over_size="8" over_size_unit="0" over_decoration="0"></font>
+          <image out="" over="" width="-1" height="-1" border="0"></image>
+          <icon out="" over="" width="0" height="0" border="0"></icon>
+          <arrow out="" over="" width="-1" height="-1" border="0"></arrow>
+          <background out_color="#000000" out_transparent="1" out_image="" out_tile="3" over_color="#DBDBDB" over_transparent="1" over_image="E:\cmx-work\products\DHTMLMenu\dhtmlmenu2007\templates\assort\clone\nike menu\3.gif" over_tile="0"></background>
+          <border style="0" width="0" out_color="#FFFFFF" out_synchronize="0" over_color="#FFFFFF" over_synchronize="0"></border>
+        </node>
+        <node state="0" condition_invisible="0">
+          <condition_prefix></condition_prefix>
+          <condition_suffix></condition_suffix>
+          <general width="0" height="0" type="0" align_h="0" align_v="1" tip_text="" status="" status_default="1"></general>
+          <font out_face="Arial" out_color="#000000" out_size="8" out_size_unit="0" out_decoration="0" over_face="Arial" over_color="#FFFFFF" over_size="8" over_size_unit="0" over_decoration="0"></font>
+          <image out="" over="" width="-1" height="-1" border="0"></image>
+          <icon out="" over="" width="0" height="0" border="0"></icon>
+          <arrow out="" over="" width="-1" height="-1" border="0"></arrow>
+          <background out_color="#000000" out_transparent="1" out_image="" out_tile="3" over_color="#DBDBDB" over_transparent="1" over_image="E:\cmx-work\products\DHTMLMenu\dhtmlmenu2007\templates\assort\clone\nike menu\2.gif" over_tile="0"></background>
+          <border style="0" width="0" out_color="#FFFFFF" out_synchronize="0" over_color="#FFFFFF" over_synchronize="0"></border>
+        </node>
+        <node state="0" condition_invisible="0">
+          <condition_prefix></condition_prefix>
+          <condition_suffix></condition_suffix>
+          <general width="0" height="0" type="0" align_h="0" align_v="1" tip_text="" status="" status_default="1"></general>
+          <font out_face="Arial" out_color="#000000" out_size="8" out_size_unit="0" out_decoration="0" over_face="Arial" over_color="#FFFFFF" over_size="8" over_size_unit="0" over_decoration="0"></font>
+          <image out="" over="" width="-1" height="-1" border="0"></image>
+          <icon out="" over="" width="0" height="0" border="0"></icon>
+          <arrow out="" over="" width="-1" height="-1" border="0"></arrow>
+          <background out_color="#000000" out_transparent="1" out_image="" out_tile="0" over_color="#DBDBDB" over_transparent="1" over_image="E:\cmx-work\products\DHTMLMenu\dhtmlmenu2007\templates\assort\clone\nike menu\1.gif" over_tile="0"></background>
+          <border style="0" width="0" out_color="#FFFFFF" out_synchronize="0" over_color="#FFFFFF" over_synchronize="0"></border>
+        </node>
+        <node state="0" condition_invisible="0">
+          <condition_prefix></condition_prefix>
+          <condition_suffix></condition_suffix>
+          <general width="0" height="0" type="0" align_h="0" align_v="1" tip_text="" status="" status_default="1"></general>
+          <font out_face="Arial" out_color="#000000" out_size="8" out_size_unit="0" out_decoration="0" over_face="Arial" over_color="#FFFFFF" over_size="8" over_size_unit="0" over_decoration="0"></font>
+          <image out="" over="" width="-1" height="-1" border="0"></image>
+          <icon out="" over="" width="0" height="0" border="0"></icon>
+          <arrow out="" over="" width="-1" height="-1" border="0"></arrow>
+          <background out_color="#000000" out_transparent="1" out_image="" out_tile="3" over_color="#DBDBDB" over_transparent="1" over_image="E:\cmx-work\products\DHTMLMenu\dhtmlmenu2007\templates\assort\clone\nike menu\2.gif" over_tile="0"></background>
+          <border style="0" width="0" out_color="#FFFFFF" out_synchronize="0" over_color="#FFFFFF" over_synchronize="0"></border>
+        </node>
+        <node state="0" condition_invisible="0">
+          <condition_prefix></condition_prefix>
+          <condition_suffix></condition_suffix>
+          <general width="0" height="0" type="0" align_h="0" align_v="1" tip_text="" status="" status_default="1"></general>
+          <font out_face="Arial" out_color="#000000" out_size="8" out_size_unit="0" out_decoration="0" over_face="Arial" over_color="#FFFFFF" over_size="8" over_size_unit="0" over_decoration="0"></font>
+          <image out="" over="" width="-1" height="-1" border="0"></image>
+          <icon out="" over="" width="0" height="0" border="0"></icon>
+          <arrow out="" over="" width="-1" height="-1" border="0"></arrow>
+          <background out_color="#000000" out_transparent="1" out_image="" out_tile="3" over_color="#DBDBDB" over_transparent="1" over_image="E:\cmx-work\products\DHTMLMenu\dhtmlmenu2007\templates\assort\clone\nike menu\2.gif" over_tile="0"></background>
+          <border style="0" width="0" out_color="#FFFFFF" out_synchronize="0" over_color="#FFFFFF" over_synchronize="0"></border>
+        </node>
+        <node state="0" condition_invisible="0">
+          <condition_prefix></condition_prefix>
+          <condition_suffix></condition_suffix>
+          <general width="0" height="0" type="0" align_h="0" align_v="1" tip_text="" status="" status_default="1"></general>
+          <font out_face="Arial" out_color="#000000" out_size="8" out_size_unit="0" out_decoration="0" over_face="Arial" over_color="#FFFFFF" over_size="8" over_size_unit="0" over_decoration="0"></font>
+          <image out="" over="" width="-1" height="-1" border="0"></image>
+          <icon out="" over="" width="0" height="0" border="0"></icon>
+          <arrow out="" over="" width="-1" height="-1" border="0"></arrow>
+          <background out_color="#000000" out_transparent="1" out_image="" out_tile="3" over_color="#DBDBDB" over_transparent="1" over_image="E:\cmx-work\products\DHTMLMenu\dhtmlmenu2007\templates\assort\clone\nike menu\3a.gif" over_tile="0"></background>
+          <border style="0" width="0" out_color="#FFFFFF" out_synchronize="0" over_color="#FFFFFF" over_synchronize="0"></border>
+        </node>
+        <node state="2" condition_invisible="0">
+          <condition_prefix></condition_prefix>
+          <condition_suffix></condition_suffix>
+          <general width="0" height="0" type="0" align_h="0" align_v="1" tip_text="" status="" status_default="1"></general>
+          <font out_face="Arial" out_color="#000000" out_size="8" out_size_unit="0" out_decoration="0" over_face="Arial" over_color="#FFFFFF" over_size="8" over_size_unit="0" over_decoration="0"></font>
+          <image out="" over="" width="-1" height="-1" border="0"></image>
+          <icon out="" over="" width="0" height="0" border="0"></icon>
+          <arrow out="D:\Program Files\SourceTec\Sothink DHTMLMenu\images\Arrow\yellow4-d.gif" over="D:\Program Files\SourceTec\Sothink DHTMLMenu\images\Arrow\yellow4-d.gif" width="7" height="7" border="0"></arrow>
+          <background out_color="#000000" out_transparent="1" out_image="" out_tile="3" over_color="#DBDBDB" over_transparent="1" over_image="E:\cmx-work\products\DHTMLMenu\dhtmlmenu2007\templates\assort\clone\nike menu\3.gif" over_tile="0"></background>
+          <border style="0" width="0" out_color="#FFFFFF" out_synchronize="0" over_color="#FFFFFF" over_synchronize="0"></border>
+        </node>
+        <node state="1" condition_invisible="0">
+          <condition_prefix></condition_prefix>
+          <condition_suffix></condition_suffix>
+          <separator size="1" bg_color="#FFFFFF" bg_transparent="0" line_img="" line_img_width="200" line_img_height="3"></separator>
+        </node>
+    </layer></node>
+    <node state="0" condition_invisible="0">
+        <condition_prefix></condition_prefix>
+        <condition_suffix></condition_suffix>
+        <general width="30" height="0" type="0" align_h="0" align_v="1" tip_text="" status="" status_default="1"></general>
+        <font out_face="Arial" out_color="#FFFFFF" out_size="8" out_size_unit="0" out_decoration="0" over_face="Arial" over_color="#FFFFFF" over_size="8" over_size_unit="0" over_decoration="0"></font>
+        <image out="" over="" width="0" height="0" border="0"></image>
+        <icon out="" over="" width="0" height="0" border="0"></icon>
+        <arrow out="D:\Program Files\SourceTec\Sothink DHTMLMenu\templates\Business\search\arrow_r.gif" over="D:\Program Files\SourceTec\Sothink DHTMLMenu\templates\Business\search\arrow_r.gif" width="7" height="7" border="0"></arrow>
+        <background out_color="#CCCCCC" out_transparent="1" out_image="" out_tile="3" over_color="#FFCC00" over_transparent="1" over_image="" over_tile="3"></background>
+        <border style="0" width="1" out_color="#666666" out_synchronize="1" over_color="#666666" over_synchronize="1"></border>
+    </node>
+    <node state="2" condition_invisible="0">
+        <condition_prefix></condition_prefix>
+        <condition_suffix></condition_suffix>
+        <general width="0" height="0" type="0" align_h="1" align_v="1" tip_text="" status="" status_default="1"></general>
+        <font out_face="Arial" out_color="#FFFFFF" out_size="8" out_size_unit="0" out_decoration="0" over_face="Arial" over_color="#FFFFFF" over_size="8" over_size_unit="0" over_decoration="0"></font>
+        <image out="" over="" width="0" height="0" border="0"></image>
+        <icon out="" over="" width="0" height="0" border="0"></icon>
+        <arrow out="D:\Program Files\SourceTec\Sothink DHTMLMenu\images\Arrow\yellow4-d.gif" over="D:\Program Files\SourceTec\Sothink DHTMLMenu\images\Arrow\yellow4-d.gif" width="7" height="7" border="0"></arrow>
+        <background out_color="#CCCCCC" out_transparent="1" out_image="" out_tile="3" over_color="#FFCC00" over_transparent="1" over_image="" over_tile="3"></background>
+        <border style="0" width="0" out_color="#FFFFFF" out_synchronize="0" over_color="#FFFFFF" over_synchronize="0"></border>
+    
+        <layer>
+          <setting>
+            <display>1</display>
+            <spacing>0</spacing>
+            <padding>3</padding>
+            <transparency>0</transparency>
+            <direction>0</direction>
+            <corner_x>0</corner_x>
+            <corner_y>2</corner_y>
+            <bg_color>#FFFFFF</bg_color>
+            <bg_transparent>0</bg_transparent>
+            <bg_image></bg_image>
+            <bg_tile>3</bg_tile>
+            <border_style>1</border_style>
+            <border_width>1</border_width>
+            <border_color>#999999</border_color>
+            <border_synchronize>1</border_synchronize>
+            <shadow_type>0</shadow_type>
+            <shadow_size>4</shadow_size>
+            <shadow_color>#7F7F7F</shadow_color>
+            <effect_show>1</effect_show>
+            <effect_hide>1</effect_hide>
+            <effect_speed>62</effect_speed>
+            <enable_decoration>0</enable_decoration>
+            <dr_left_top></dr_left_top>
+            <dr_right_top></dr_right_top>
+            <dr_right_bottom></dr_right_bottom>
+            <dr_left_bottom></dr_left_bottom>
+            <dr_top img_path="" img_height="-1" img_width="-1" bg_img="" bg_color="#FFFFF7" bg_transparent="0" bg_tile="3"></dr_top>
+            <dr_right img_path="" img_height="-1" img_width="-1" bg_img="" bg_color="#FFFFF7" bg_transparent="0" bg_tile="3"></dr_right>
+            <dr_bottom img_path="" img_height="-1" img_width="-1" bg_img="" bg_color="#FFFFF7" bg_transparent="0" bg_tile="3"></dr_bottom>
+            <dr_left img_path="" img_height="-1" img_width="-1" bg_img="" bg_color="#FFFFF7" bg_transparent="0" bg_tile="3"></dr_left>
+          </setting>
+          <node state="0" condition_invisible="0">
+            <condition_prefix></condition_prefix>
+            <condition_suffix></condition_suffix>
+            <separator size="1" bg_color="#FFFFFF" bg_transparent="0" line_img="" line_img_width="200" line_img_height="3"></separator>
+          </node>
+          <node state="0" condition_invisible="0">
+            <condition_prefix></condition_prefix>
+            <condition_suffix></condition_suffix>
+            <general width="0" height="0" type="0" align_h="0" align_v="1" tip_text="" status="" status_default="1"></general>
+            <font out_face="Arial" out_color="#000000" out_size="8" out_size_unit="0" out_decoration="1" over_face="Arial" over_color="#FFFFFF" over_size="8" over_size_unit="0" over_decoration="1"></font>
+            <image out="" over="" width="-1" height="-1" border="0"></image>
+            <icon out="" over="" width="1" height="0" border="0"></icon>
+            <arrow out="" over="" width="-1" height="-1" border="0"></arrow>
+            <background out_color="#000000" out_transparent="1" out_image="" out_tile="3" over_color="#DBDBDB" over_transparent="1" over_image="E:\cmx-work\products\DHTMLMenu\dhtmlmenu2007\templates\assort\clone\nike menu\3a.gif" over_tile="0"></background>
+            <border style="0" width="0" out_color="#FFFFFF" out_synchronize="0" over_color="#FFFFFF" over_synchronize="0"></border>
+          </node>
+          <node state="0" condition_invisible="0">
+            <condition_prefix></condition_prefix>
+            <condition_suffix></condition_suffix>
+            <separator size="1" bg_color="#FFFFFF" bg_transparent="0" line_img="" line_img_width="200" line_img_height="3"></separator>
+          </node>
+          <node state="0" condition_invisible="0">
+            <condition_prefix></condition_prefix>
+            <condition_suffix></condition_suffix>
+            <separator size="1" bg_color="#000000" bg_transparent="0" line_img="" line_img_width="200" line_img_height="-1"></separator>
+          </node>
+          <node state="0" condition_invisible="0">
+            <condition_prefix></condition_prefix>
+            <condition_suffix></condition_suffix>
+            <separator size="1" bg_color="#FFFFFF" bg_transparent="0" line_img="" line_img_width="200" line_img_height="3"></separator>
+          </node>
+          <node state="0" condition_invisible="0">
+            <condition_prefix></condition_prefix>
+            <condition_suffix></condition_suffix>
+            <general width="0" height="0" type="0" align_h="0" align_v="1" tip_text="" status="" status_default="1"></general>
+            <font out_face="Arial" out_color="#000000" out_size="8" out_size_unit="0" out_decoration="0" over_face="Arial" over_color="#FFFFFF" over_size="8" over_size_unit="0" over_decoration="0"></font>
+            <image out="" over="" width="-1" height="-1" border="0"></image>
+            <icon out="" over="" width="1" height="0" border="0"></icon>
+            <arrow out="" over="" width="-1" height="-1" border="0"></arrow>
+            <background out_color="#000000" out_transparent="1" out_image="" out_tile="3" over_color="#DBDBDB" over_transparent="1" over_image="E:\cmx-work\products\DHTMLMenu\dhtmlmenu2007\templates\assort\clone\nike menu\2.gif" over_tile="0"></background>
+            <border style="0" width="0" out_color="#FFFFFF" out_synchronize="0" over_color="#FFFFFF" over_synchronize="0"></border>
+          </node>
+          <node state="0" condition_invisible="0">
+            <condition_prefix></condition_prefix>
+            <condition_suffix></condition_suffix>
+            <general width="0" height="0" type="0" align_h="0" align_v="1" tip_text="" status="" status_default="1"></general>
+            <font out_face="Arial" out_color="#000000" out_size="8" out_size_unit="0" out_decoration="0" over_face="Arial" over_color="#FFFFFF" over_size="8" over_size_unit="0" over_decoration="0"></font>
+            <image out="" over="" width="-1" height="-1" border="0"></image>
+            <icon out="" over="" width="1" height="0" border="0"></icon>
+            <arrow out="" over="" width="-1" height="-1" border="0"></arrow>
+            <background out_color="#000000" out_transparent="1" out_image="" out_tile="3" over_color="#DBDBDB" over_transparent="1" over_image="E:\cmx-work\products\DHTMLMenu\dhtmlmenu2007\templates\assort\clone\nike menu\1.gif" over_tile="0"></background>
+            <border style="0" width="0" out_color="#FFFFFF" out_synchronize="0" over_color="#FFFFFF" over_synchronize="0"></border>
+          </node>
+          <node state="0" condition_invisible="0">
+            <condition_prefix></condition_prefix>
+            <condition_suffix></condition_suffix>
+            <general width="0" height="0" type="0" align_h="0" align_v="1" tip_text="" status="" status_default="1"></general>
+            <font out_face="Arial" out_color="#000000" out_size="8" out_size_unit="0" out_decoration="0" over_face="Arial" over_color="#FFFFFF" over_size="8" over_size_unit="0" over_decoration="0"></font>
+            <image out="" over="" width="-1" height="-1" border="0"></image>
+            <icon out="" over="" width="1" height="0" border="0"></icon>
+            <arrow out="" over="" width="-1" height="-1" border="0"></arrow>
+            <background out_color="#000000" out_transparent="1" out_image="" out_tile="3" over_color="#DBDBDB" over_transparent="1" over_image="E:\cmx-work\products\DHTMLMenu\dhtmlmenu2007\templates\assort\clone\nike menu\1.gif" over_tile="0"></background>
+            <border style="0" width="0" out_color="#FFFFFF" out_synchronize="0" over_color="#FFFFFF" over_synchronize="0"></border>
+          </node>
+          <node state="0" condition_invisible="0">
+            <condition_prefix></condition_prefix>
+            <condition_suffix></condition_suffix>
+            <general width="0" height="0" type="0" align_h="0" align_v="1" tip_text="" status="" status_default="1"></general>
+            <font out_face="Arial" out_color="#000000" out_size="8" out_size_unit="0" out_decoration="0" over_face="Arial" over_color="#FFFFFF" over_size="8" over_size_unit="0" over_decoration="0"></font>
+            <image out="" over="" width="-1" height="-1" border="0"></image>
+            <icon out="" over="" width="1" height="0" border="0"></icon>
+            <arrow out="" over="" width="-1" height="-1" border="0"></arrow>
+            <background out_color="#000000" out_transparent="1" out_image="" out_tile="3" over_color="#DBDBDB" over_transparent="1" over_image="E:\cmx-work\products\DHTMLMenu\dhtmlmenu2007\templates\assort\clone\nike menu\1.gif" over_tile="0"></background>
+            <border style="0" width="0" out_color="#FFFFFF" out_synchronize="0" over_color="#FFFFFF" over_synchronize="0"></border>
+          </node>
+          <node state="2" condition_invisible="0">
+            <condition_prefix></condition_prefix>
+            <condition_suffix></condition_suffix>
+            <general width="0" height="0" type="0" align_h="0" align_v="1" tip_text="" status="" status_default="1"></general>
+            <font out_face="Arial" out_color="#000000" out_size="8" out_size_unit="0" out_decoration="0" over_face="Arial" over_color="#FFFFFF" over_size="8" over_size_unit="0" over_decoration="0"></font>
+            <image out="" over="" width="-1" height="-1" border="0"></image>
+            <icon out="" over="" width="1" height="0" border="0"></icon>
+            <arrow out="D:\Program Files\SourceTec\Sothink DHTMLMenu\images\Arrow\yellow4-d.gif" over="D:\Program Files\SourceTec\Sothink DHTMLMenu\images\Arrow\yellow4-d.gif" width="7" height="7" border="0"></arrow>
+            <background out_color="#000000" out_transparent="1" out_image="" out_tile="3" over_color="#DBDBDB" over_transparent="1" over_image="E:\cmx-work\products\DHTMLMenu\dhtmlmenu2007\templates\assort\clone\nike menu\5.gif" over_tile="0"></background>
+            <border style="0" width="0" out_color="#FFFFFF" out_synchronize="0" over_color="#FFFFFF" over_synchronize="0"></border>
+          </node>
+          <node state="0" condition_invisible="0">
+            <condition_prefix></condition_prefix>
+            <condition_suffix></condition_suffix>
+            <separator size="1" bg_color="#FFFFFF" bg_transparent="0" line_img="" line_img_width="200" line_img_height="3"></separator>
+          </node>
+    </layer></node>
+    <node state="0" condition_invisible="0">
+          <condition_prefix></condition_prefix>
+          <condition_suffix></condition_suffix>
+          <general width="30" height="0" type="0" align_h="0" align_v="1" tip_text="" status="" status_default="1"></general>
+          <font out_face="Arial" out_color="#FFFFFF" out_size="8" out_size_unit="0" out_decoration="0" over_face="Arial" over_color="#FFFFFF" over_size="8" over_size_unit="0" over_decoration="0"></font>
+          <image out="" over="" width="0" height="0" border="0"></image>
+          <icon out="" over="" width="0" height="0" border="0"></icon>
+          <arrow out="D:\Program Files\SourceTec\Sothink DHTMLMenu\templates\Business\search\arrow_r.gif" over="D:\Program Files\SourceTec\Sothink DHTMLMenu\templates\Business\search\arrow_r.gif" width="7" height="7" border="0"></arrow>
+          <background out_color="#CCCCCC" out_transparent="1" out_image="" out_tile="3" over_color="#FFCC00" over_transparent="1" over_image="" over_tile="3"></background>
+          <border style="0" width="1" out_color="#666666" out_synchronize="1" over_color="#666666" over_synchronize="1"></border>
+    </node>
+    <node state="0" condition_invisible="0">
+          <condition_prefix></condition_prefix>
+          <condition_suffix></condition_suffix>
+          <general width="180" height="0" type="0" align_h="0" align_v="1" tip_text="" status="" status_default="1"></general>
+          <font out_face="Arial" out_color="#FFFFFF" out_size="8" out_size_unit="0" out_decoration="1" over_face="Arial" over_color="#FFFFFF" over_size="8" over_size_unit="0" over_decoration="1"></font>
+          <image out="" over="" width="0" height="0" border="0"></image>
+          <icon out="" over="" width="0" height="0" border="0"></icon>
+          <arrow out="D:\Program Files\SourceTec\Sothink DHTMLMenu\templates\Business\search\arrow_r.gif" over="D:\Program Files\SourceTec\Sothink DHTMLMenu\templates\Business\search\arrow_r.gif" width="7" height="7" border="0"></arrow>
+          <background out_color="#CCCCCC" out_transparent="1" out_image="" out_tile="3" over_color="#FFCC00" over_transparent="1" over_image="" over_tile="3"></background>
+          <border style="1" width="1" out_color="#666666" out_synchronize="1" over_color="#666666" over_synchronize="1"></border>
+    </node>
+    <node state="0" condition_invisible="0">
+          <condition_prefix></condition_prefix>
+          <condition_suffix></condition_suffix>
+          <general width="0" height="0" type="0" align_h="0" align_v="1" tip_text="" status="" status_default="1"></general>
+          <font out_face="Arial" out_color="#FFFFFF" out_size="8" out_size_unit="0" out_decoration="0" over_face="Arial" over_color="#FFFFFF" over_size="8" over_size_unit="0" over_decoration="0"></font>
+          <image out="" over="" width="0" height="0" border="0"></image>
+          <icon out="" over="" width="0" height="0" border="0"></icon>
+          <arrow out="D:\Program Files\SourceTec\Sothink DHTMLMenu\templates\Business\search\arrow_r.gif" over="D:\Program Files\SourceTec\Sothink DHTMLMenu\templates\Business\search\arrow_r.gif" width="7" height="7" border="0"></arrow>
+          <background out_color="#CCCCCC" out_transparent="1" out_image="" out_tile="3" over_color="#FFCC00" over_transparent="1" over_image="" over_tile="3"></background>
+          <border style="0" width="0" out_color="#FFFFFF" out_synchronize="0" over_color="#FFFFFF" over_synchronize="0"></border>
+    </node></layer>
+    
+  <cross_frame>
+    <created>0</created>
+    <direction>0</direction>
+    <coor_x>0</coor_x>
+    <coor_y>0</coor_y>
+    <iframe>0</iframe>
+    <navigate_frame>Navigation_frame</navigate_frame>
+    <content_frame>Main_frame</content_frame>
+    <show_in_navigation>1</show_in_navigation>
+  </cross_frame>
+  <scroll_h>
+    <enable_scroll>0</enable_scroll>
+    <enable_custom>0</enable_custom>
+    <custom_size>1</custom_size>
+    <bg_out_color>#FFFFF7</bg_out_color>
+    <bg_out_transparent>1</bg_out_transparent>
+    <bg_out_image></bg_out_image>
+    <bg_out_tile>3</bg_out_tile>
+    <bg_over_color>#B5BED6</bg_over_color>
+    <bg_over_transparent>1</bg_over_transparent>
+    <bg_over_image></bg_over_image>
+    <bg_over_tile>3</bg_over_tile>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <border_out_color>#FFFFF7</border_out_color>
+    <border_out_synchronize>1</border_out_synchronize>
+    <border_over_color>#000000</border_over_color>
+    <border_over_synchronize>1</border_over_synchronize>
+    <arrow_lu_enable>D:\Program Files\SourceTec\Sothink DHTMLMenu\Resource\left_disabled.gif</arrow_lu_enable>
+    <arrow_lu_disable>D:\Program Files\SourceTec\Sothink DHTMLMenu\Resource\left_enabled.gif</arrow_lu_disable>
+    <arrow_lu_width>9</arrow_lu_width>
+    <arrow_lu_height>7</arrow_lu_height>
+    <arrow_lu_border>0</arrow_lu_border>
+    <arrow_rd_enable>D:\Program Files\SourceTec\Sothink DHTMLMenu\Resource\right_disabled.gif</arrow_rd_enable>
+    <arrow_rd_disable>D:\Program Files\SourceTec\Sothink DHTMLMenu\Resource\right_enabled.gif</arrow_rd_disable>
+    <arrow_rd_width>9</arrow_rd_width>
+    <arrow_rd_height>7</arrow_rd_height>
+    <arrow_rd_border>0</arrow_rd_border>
+  </scroll_h>
+  <scroll_v>
+    <enable_scroll>0</enable_scroll>
+    <enable_custom>0</enable_custom>
+    <custom_size>1</custom_size>
+    <bg_out_color>#FFFFF7</bg_out_color>
+    <bg_out_transparent>1</bg_out_transparent>
+    <bg_out_image></bg_out_image>
+    <bg_out_tile>3</bg_out_tile>
+    <bg_over_color>#B5BED6</bg_over_color>
+    <bg_over_transparent>1</bg_over_transparent>
+    <bg_over_image></bg_over_image>
+    <bg_over_tile>3</bg_over_tile>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <border_out_color>#FFFFF7</border_out_color>
+    <border_out_synchronize>1</border_out_synchronize>
+    <border_over_color>#000000</border_over_color>
+    <border_over_synchronize>1</border_over_synchronize>
+    <arrow_lu_enable>D:\Program Files\SourceTec\Sothink DHTMLMenu\Resource\up_disabled.gif</arrow_lu_enable>
+    <arrow_lu_disable>D:\Program Files\SourceTec\Sothink DHTMLMenu\Resource\up_enabled.gif</arrow_lu_disable>
+    <arrow_lu_width>7</arrow_lu_width>
+    <arrow_lu_height>9</arrow_lu_height>
+    <arrow_lu_border>0</arrow_lu_border>
+    <arrow_rd_enable>D:\Program Files\SourceTec\Sothink DHTMLMenu\Resource\down_disabled.gif</arrow_rd_enable>
+    <arrow_rd_disable>D:\Program Files\SourceTec\Sothink DHTMLMenu\Resource\down_enabled.gif</arrow_rd_disable>
+    <arrow_rd_width>7</arrow_rd_width>
+    <arrow_rd_height>9</arrow_rd_height>
+    <arrow_rd_border>0</arrow_rd_border>
+  </scroll_v>
+  
+</sothink_menu>

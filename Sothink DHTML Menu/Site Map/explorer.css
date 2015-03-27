@@ -1,0 +1,46 @@
+.ItemStyle {
+	list-style-image: url(file.gif);
+	font-family: "sans-serif";
+	font-size: 12px;
+	vertical-align: middle;
+
+}
+
+.PopItemStyle {
+	list-style-image: url(folder.gif);
+	font-family: "sans-serif";
+	font-size: 12px;
+	vertical-align: middle;
+
+}
+
+body {
+	background-color: #ECF1FF;
+	color: #0000CC;
+	background-repeat: repeat;
+	background-attachment: fixed;
+
+
+
+
+}
+
+A:link {
+	color: #000000;
+	font-size:12px: none
+}
+
+A:visited {
+	font-size:12px;
+	color: #666666;
+
+}
+
+A:hover {
+	color: Red;
+	font-size:12px;
+	text-decoration: none
+	}
+A: {
+	text-decoration: none
+	}

@@ -1,0 +1,51 @@
+.ItemStyle {
+	font-family: "Microsoft Sans Serif";
+	font-size: 14px;
+	vertical-align: middle;
+	background-repeat: no-repeat;
+	list-style-type: circle;
+
+
+
+
+
+
+}
+
+.PopItemStyle {
+	font-family: "Microsoft Sans Serif";
+	font-size: 14px;
+	vertical-align: middle;
+	background-repeat: no-repeat;
+	list-style-type: square;
+
+
+
+
+
+}
+
+body {
+	background-color: #000000;
+	color: #FF9900;
+	font-size: 14px;
+
+
+
+
+}
+a {
+	color: #FF9900;
+}
+a:link {
+	color: #FF9900;
+	text-decoration: none;
+}
+a:visited {
+	color: #FF9900;
+	text-decoration: none;
+}
+a:hover {
+	color: #FFFF00;
+	text-decoration: underline;
+}
