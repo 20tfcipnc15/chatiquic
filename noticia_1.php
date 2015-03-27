@@ -1,5 +1,6 @@
 <?php
-	include("funciones.php");
+//p	
+include("funciones.php");
 	$link=conexion();
 	$not=$_GET['not'];
 	$consulta=mysql_query("select * from noticia where cod=$not", $link);
