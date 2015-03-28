@@ -1,5 +1,4 @@
-<?php
-//p	
+<?php	
 include("funciones.php");
 	$link=conexion();
 	$not=$_GET['not'];
