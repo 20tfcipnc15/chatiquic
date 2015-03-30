@@ -2,7 +2,7 @@
   function conexion()
   { 
      $link=mysql_connect("localhost","root","") or die("Error: ".mysql_error());
-	 mysql_select_db("facultadvf",$link) or die("Error: ".mysql_error());
+	 mysql_select_db("facultad2v2",$link) or die("Error: ".mysql_error());
 	 return($link);
   }
   
