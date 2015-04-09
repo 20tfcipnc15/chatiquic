@@ -2180,10 +2180,11 @@ if($procedencia==null)
 		//effff----para el Juploadphp guarde uno a uno
 		$clsInstanceName=new jUploadPHP($_FILES['fTheFileField2'],true);
 		$clsInstanceName->setTempFolder('Escaneados/');
-		$clsInstanceName->setMaxFileSizeAllowed(1800000)->setAllowedExtensions
+		$clsInstanceName->setMaxFileSizeAllowed(5000000)->setAllowedExtensions
 		(
 			array(
-				'pdf',
+				'PDF',
+                                'pdf',
 				'doc',
 				'docx',
 				'xls',

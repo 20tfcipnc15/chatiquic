@@ -1,4 +1,4 @@
-<? 
+<?PHP
 session_start();
 	//Codigo tiempo de sesion 
 	$fechaGuardada = $_SESSION['ultimoAcceso'];
@@ -29,7 +29,7 @@ $cid_unidad=$_SESSION['id_unidad'];
 include("../funciones1.php");
 $link=conexion();
 $consulta ="SELECT reg_int FROM recibido order by id_re DESC limit 1";
-$resultado=mysql_query($consulta) or die ("Error de búsqueda en la BD: ". mysql_Error());
+$resultado=mysql_query($consulta) or die ("Error de bï¿½squeda en la BD: ". mysql_Error());
 $linea=mysql_fetch_array($resultado);
 $reg_int = $linea["reg_int"];
 ?>
@@ -317,7 +317,7 @@ function obs5(descargorota){
                                                      &nbsp;&nbsp;Usuario: <? echo $cnombre; ?> </span></p>                                    <p class="Estilo77">&nbsp;&nbsp;R.U.T. Actual:
 <? 
 $consulta7 ="SELECT rut FROM rut WHERE id_unidad = '$cid_unidad' order by id_rut DESC limit 1";
-$resultado7=mysql_query($consulta7) or die ("Error de búsqueda en la BD: ". mysql_Error());
+$resultado7=mysql_query($consulta7) or die ("Error de bï¿½squeda en la BD: ". mysql_Error());
 $num7 = mysql_num_rows($resultado7);
 if($num7 > 0)
 {
@@ -537,7 +537,7 @@ if ($row = mysql_fetch_array($result))
                                                          </div></td>
                                                        </tr>
                                                      </table>
-                                                    </td>
+                                                   ï¿½</td>
                                                  </tr>
                                                  <tr>
                                                    <td height="1" bgcolor="#74ABD3"></td>
