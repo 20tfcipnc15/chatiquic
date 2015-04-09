@@ -1,4 +1,4 @@
-<?
+<?php
 //efffff
 require_once 'jUploadPHP.php';
 include "./pclzip.lib.php";
@@ -19,14 +19,14 @@ $link=conexion();
 
 //Obtenemos el RUT correspondiente a la unidad.
 $consulta ="SELECT rut FROM rut WHERE id_unidad = '$cid_unidad' order by id_rut DESC limit 1";
-$resultado=mysql_query($consulta) or die ("Error de búsqueda en la BD: ". mysql_Error());
+$resultado=mysql_query($consulta) or die ("Error de bï¿½squeda en la BD: ". mysql_Error());
 $numResultados = mysql_num_rows($resultado);
 if ($numResultados>0)
 {
 	$linea=mysql_fetch_array($resultado);
 	$rut = $linea["rut"];	
 
-	//Obtenemos la parte numérica, para incrementar su valor como nuevo Trámite
+	//Obtenemos la parte numï¿½rica, para incrementar su valor como nuevo Trï¿½mite
 	$B = '-';
 	$BB= strpos($rut,$B);
 	$num= substr($rut,0,$BB);
@@ -37,7 +37,7 @@ else
 	
 //Obtenemos la sigla de la unidad correspondiente
 $sql ="SELECT sigla FROM unidad WHERE id_unidad = $cid_unidad";
-$res=mysql_query($sql) or die ("Error de búsqueda en la BD: ". mysql_Error());
+$res=mysql_query($sql) or die ("Error de bï¿½squeda en la BD: ". mysql_Error());
 $vec=mysql_fetch_array($res);
 $sigla = $vec["sigla"];	
 
@@ -444,7 +444,7 @@ if($id_tram=="Descargo de Fondo en Avance")
 								$id_tc = $vec["id_tc"];
 							}
 						}
-						$referencias = $tipito.' Responsable: '.$valor1.' por la actividad de: '.$valor2.', solicitado por la Unidad '.$valor3.' por un monto de '.$valor4.' Bs. con número de Boleta: '.$valor5.'.';
+						$referencias = $tipito.' Responsable: '.$valor1.' por la actividad de: '.$valor2.', solicitado por la Unidad '.$valor3.' por un monto de '.$valor4.' Bs. con nï¿½mero de Boleta: '.$valor5.'.';
 					}
 }
 if($id_tram=="Descargo Viajes")
@@ -493,7 +493,7 @@ if($id_tram=="Descargo Viajes")
 								$id_tc = $vec["id_tc"];
 							}
 						}
-						$referencias = $tipito.' Responsable: '.$valor1.' por la actividad de: '.$valor2.', solicitado por la Unidad '.$valor3.' con número de Boleta: '.$valor4.'.';
+						$referencias = $tipito.' Responsable: '.$valor1.' por la actividad de: '.$valor2.', solicitado por la Unidad '.$valor3.' con nï¿½mero de Boleta: '.$valor4.'.';
 					}
 }
 if($id_tram=="Otros Descargos Cierre de Cargos")
@@ -543,7 +543,7 @@ if($id_tram=="Otros Descargos Cierre de Cargos")
 								$id_tc = $vec["id_tc"];
 							}
 						}
-						$referencias = $tipito.' Nombre del Descargo: '.$valor0.' Responsable: '.$valor1.' por la actividad de: '.$valor2.', solicitado por la Unidad '.$valor3.' con número de Boleta: '.$valor4.'.';
+						$referencias = $tipito.' Nombre del Descargo: '.$valor0.' Responsable: '.$valor1.' por la actividad de: '.$valor2.', solicitado por la Unidad '.$valor3.' con nï¿½mero de Boleta: '.$valor4.'.';
 					}
 }
 if($id_tram=="Descargo Fondos Rotatorios")
@@ -597,7 +597,7 @@ if($id_tram=="Descargo Fondos Rotatorios")
 										$id_tc = $vec["id_tc"];
 									}
 								}
-								$referencias = $tipito.' '.$subtramite1.' para Reposicion, Responsable del Fondo: '.$valor3.', solicitado por la Unidad '.$valor4.' por un monto de '.$valor5.' Bs. con número de Boleta '.$valor6.'.';
+								$referencias = $tipito.' '.$subtramite1.' para Reposicion, Responsable del Fondo: '.$valor3.', solicitado por la Unidad '.$valor4.' por un monto de '.$valor5.' Bs. con nï¿½mero de Boleta '.$valor6.'.';
 							}
 						}
 						else
@@ -642,7 +642,7 @@ if($id_tram=="Descargo Fondos Rotatorios")
 										$id_tc = $vec["id_tc"];
 									}
 								}
-								$referencias = $tipito.' '.$subtramite1.' para cierre, Responsable del Fondo: '.$valor3.', solicitado por la Unidad '.$valor4.' por un monto de '.$valor5.' Bs. con número de Boleta '.$valor6.'.';
+								$referencias = $tipito.' '.$subtramite1.' para cierre, Responsable del Fondo: '.$valor3.', solicitado por la Unidad '.$valor4.' por un monto de '.$valor5.' Bs. con nï¿½mero de Boleta '.$valor6.'.';
 							}
 						}
 		}
@@ -692,7 +692,7 @@ if($id_tram=="Descargo Fondos Rotatorios")
 										$id_tc = $vec["id_tc"];
 									}
 								}
-								$referencias = $tipito.' '.$subtramite1.' para Reposicion, Responsable del Fondo: '.$valor3.', solicitado por la Unidad '.$valor4.' por un monto de '.$valor5.' Bs. con número de Boleta '.$valor6.'.';
+								$referencias = $tipito.' '.$subtramite1.' para Reposicion, Responsable del Fondo: '.$valor3.', solicitado por la Unidad '.$valor4.' por un monto de '.$valor5.' Bs. con nï¿½mero de Boleta '.$valor6.'.';
 							}
 						}
 						else
@@ -737,7 +737,7 @@ if($id_tram=="Descargo Fondos Rotatorios")
 										$id_tc = $vec["id_tc"];
 									}
 								}
-								$referencias = $tipito.' '.$subtramite1.' para cierre, Responsable del Fondo: '.$valor3.', solicitado por la Unidad '.$valor4.' por un monto de '.$valor5.' Bs. con número de Boleta '.$valor6.'.';
+								$referencias = $tipito.' '.$subtramite1.' para cierre, Responsable del Fondo: '.$valor3.', solicitado por la Unidad '.$valor4.' por un monto de '.$valor5.' Bs. con nï¿½mero de Boleta '.$valor6.'.';
 							}
 						}
 		}
@@ -787,7 +787,7 @@ if($id_tram=="Descargo Fondos Rotatorios")
 										$id_tc = $vec["id_tc"];
 									}
 								}
-								$referencias = $tipito.' '.$subtramite1.','.$valor1.' para Reposicion, Responsable del Fondo: '.$valor3.', solicitado por la Unidad '.$valor4.' por un monto de '.$valor5.' Bs. con número de Boleta '.$valor6.'.';
+								$referencias = $tipito.' '.$subtramite1.','.$valor1.' para Reposicion, Responsable del Fondo: '.$valor3.', solicitado por la Unidad '.$valor4.' por un monto de '.$valor5.' Bs. con nï¿½mero de Boleta '.$valor6.'.';
 							}
 						}
 						else
@@ -832,7 +832,7 @@ if($id_tram=="Descargo Fondos Rotatorios")
 										$id_tc = $vec["id_tc"];
 									}
 								}
-								$referencias = $tipito.' '.$subtramite1.','.$valor1.' para cierre, Responsable del Fondo: '.$valor3.', solicitado por la Unidad '.$valor4.' por un monto de '.$valor5.' Bs. con número de Boleta '.$valor6.'.';
+								$referencias = $tipito.' '.$subtramite1.','.$valor1.' para cierre, Responsable del Fondo: '.$valor3.', solicitado por la Unidad '.$valor4.' por un monto de '.$valor5.' Bs. con nï¿½mero de Boleta '.$valor6.'.';
 							}
 						}
 		}
@@ -1977,7 +1977,7 @@ if($id_tramite==67)
 								}
 							}
 }//CIERRE NOMBRAMIENTOS
-//AÑO SABATICO
+//Aï¿½O SABATICO
 if($id_tramite==56)
 {			
 		$valor1 = $_POST['nombresabatico'];
@@ -1985,7 +1985,7 @@ if($id_tramite==56)
 		$valor3 = $_POST['calendario11'];
 		$valor4 = $_POST['obssabatico'];
 			
-		$tipito='Solicitud Año Sabatico,';
+		$tipito='Solicitud Aï¿½o Sabatico,';
 		$id_div=0;
 			
 							$sql = "INSERT INTO tramitecrecencial(".$transaccional.") VALUES (NULL,'$rut','$id_macro','$id_tramite','$id_div','','','','','','','','','','','','','','','','$valor1','','','','','','','','','','','','','','','','','','','','','$valor2','$valor3','','$valor4')";
@@ -2009,7 +2009,7 @@ if($id_tramite==56)
 							{
 							$referencias = $tipito.' a favor del Docente: '.$valor1.', desde fecha: '.$valor2.' hasta fecha: '.$valor3.', con la siguiente observacion: '.$valor4.'.';
 							}
-}//CIERRE AÑO SABATICO
+}//CIERRE Aï¿½O SABATICO
 //COMUNICADO
 if($id_tramite==72)
 {			
@@ -2180,10 +2180,11 @@ if($procedencia==null)
 		//effff----para el Juploadphp guarde uno a uno
 		$clsInstanceName=new jUploadPHP($_FILES['fTheFileField2'],true);
 		$clsInstanceName->setTempFolder('Escaneados/');
-		$clsInstanceName->setMaxFileSizeAllowed(1800000)->setAllowedExtensions
+		$clsInstanceName->setMaxFileSizeAllowed(5000000)->setAllowedExtensions
 		(
 			array(
-				'pdf',
+				'PDF',
+                                'pdf',
 				'doc',
 				'docx',
 				'xls',
@@ -2207,7 +2208,7 @@ $result = mysql_query($sql,$link);
 		$direccion1="Compress/";
 		$completedirection1=$direccion1.$archive1;
 		$archivo1 = new PclZip($completedirection1);
-		/* Llamamos el metodo que creara el nuevo fichero añadiendo los ficheros especificados y separados por comas */
+		/* Llamamos el metodo que creara el nuevo fichero aï¿½adiendo los ficheros especificados y separados por comas */
 		$creacion1 = $archivo1->create($gay1);
 		
 		//effffffffffffffffff
@@ -2222,7 +2223,7 @@ $id_c=$linea["id_c"];
 	
 //obtenemos el registro interno correspondiente a la unidad.
 $consulta ="SELECT reg_int FROM recibido WHERE id_unidad = $cid_unidad order by id_re DESC limit 1";
-$resultado=mysql_query($consulta) or die ("Error de búsqueda en la BD: ". mysql_Error());
+$resultado=mysql_query($consulta) or die ("Error de bï¿½squeda en la BD: ". mysql_Error());
 $numResultados = mysql_num_rows($resultado);
 if ($numResultados>0)
 {
@@ -2238,7 +2239,7 @@ $sql="INSERT INTO recibido(id_re,id_unidad,reg_int,id_c,recibido_por,ip,fecha) V
 	  (NULL,'$cid_unidad','$reg_int','$id_c','$cnombre','$ip','$fecha')";
 $result = mysql_query($sql,$link);
 
-//Insertamos la primera asignación en la tabla correspondencia
+//Insertamos la primera asignaciï¿½n en la tabla correspondencia
 $sql="INSERT INTO correspondencia (id_c,rut,unidad,fecha,correlativo,hoja_ruta,tipo,referencias,fojas,responsable,destino,ip,estado,sw,documento,id_tc) VALUES (NULL,'$rut','$cunidad','$fecha','$reg_ext','$hoja_ruta','$tipo','$referencias','$fojas','$nombre','$destino','$ip','$estado','1','$gay1','$id_tc')";
 $result = mysql_query($sql,$link);
 
